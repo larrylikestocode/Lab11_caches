@@ -156,67 +156,106 @@ _start:
         MCR p15, 0, R1, c9, c13, 1 //Write 0x11 into PMXEVTPER (PMN0 measure CPU cycles)
   d4:	ee091f3d 	mcr	15, 0, r1, cr9, cr13, {1}
 
-        //Step 4: enable PMN0
-        MOV R0, #1                 //PMN0 is bit 0 of PMCNTENSET
+        //Configure PMN1 to count cache misses
+        MOV R0, #1                 //write 1 into R0 then PMSELR
   d8:	e3a00001 	mov	r0, #1
+        MCR p15, 0, R0, c9, c12, 5 //write 1 into PMSELR selects PMN1
+  dc:	ee090fbc 	mcr	15, 0, r0, cr9, cr12, {5}
+        MOV R1, #0x3               //Event 0x3 is Level 1 data cache misses
+  e0:	e3a01003 	mov	r1, #3
+        MCR p15, 0, R1, C9, C13, 1//Write 0x3 into PMXEVTPER(PMN1 measure Level 1 data cache misses )
+  e4:	ee091f3d 	mcr	15, 0, r1, cr9, cr13, {1}
+
+        //Configure PMN2 to count number of load insttruction excuted
+        MOV R0, #2                //write 2 into R0 then PMSELR
+  e8:	e3a00002 	mov	r0, #2
+        MCR p15, 0, R0, c9, c12, 5 //Write 2 in to PMSELR selects PMN2
+  ec:	ee090fbc 	mcr	15, 0, r0, cr9, cr12, {5}
+        MOV R1, #0x6              //Event 0x6 is number of insttructions excuted
+  f0:	e3a01006 	mov	r1, #6
+        MCR p15, 0, R1, c9, c13, 1//Write 0x6 into PMXEVTPER(PMN2 measure number of load insttruction excuted )
+  f4:	ee091f3d 	mcr	15, 0, r1, cr9, cr13, {1}
+
+
+
+        //Step 4: enable PMN0, PMN1, PMN2
+        MOV R0, #111                 //PMN0 is bit 0 of PMCNTENSET
+  f8:	e3a0006f 	mov	r0, #111	; 0x6f
         MCR p15, 0, R0, c9, c12, 1 //Setting bit 0 of PMCNTENSET enables PMN0
-  dc:	ee090f3c 	mcr	15, 0, r0, cr9, cr12, {1}
+  fc:	ee090f3c 	mcr	15, 0, r0, cr9, cr12, {1}
 
         //Step 5:clear all counters and start counters
         MOV R0, #3                 //bits 0(start counters) and 1(reset counters)
-  e0:	e3a00003 	mov	r0, #3
+ 100:	e3a00003 	mov	r0, #3
         MCR p15, 0, R0, c9, c12, 0 //Setting PMCR to 3
-  e4:	ee090f1c 	mcr	15, 0, r0, cr9, cr12, {0}
+ 104:	ee090f1c 	mcr	15, 0, r0, cr9, cr12, {0}
 
         //Step 6: code we wish to profile using hardware counters
         MOV R1, #0x00100000        //base of array
-  e8:	e3a01601 	mov	r1, #1048576	; 0x100000
+ 108:	e3a01601 	mov	r1, #1048576	; 0x100000
         MOV R2, #0X100             //Iterations of inner loop
-  ec:	e3a02c01 	mov	r2, #256	; 0x100
+ 10c:	e3a02c01 	mov	r2, #256	; 0x100
         MOV R3, #2                 //Iterations of outer loop
-  f0:	e3a03002 	mov	r3, #2
+ 110:	e3a03002 	mov	r3, #2
         MOV R4, #0                 //i = 0 (outer loop counter)
-  f4:	e3a04000 	mov	r4, #0
+ 114:	e3a04000 	mov	r4, #0
 
-000000f8 <L_outer_loop>:
+00000118 <L_outer_loop>:
 
 L_outer_loop:
         MOV R5, #0                 //J = 0 (inner loop counter)
-  f8:	e3a05000 	mov	r5, #0
+ 118:	e3a05000 	mov	r5, #0
 
-000000fc <L_inner_loop>:
+0000011c <L_inner_loop>:
 
 L_inner_loop:
-        LDR R6, [R1, R5, LSL #2]  //read data from memory
-  fc:	e7916105 	ldr	r6, [r1, r5, lsl #2]
+        LDR R6, [R1, R5, LSL #6]  //read data from memory
+ 11c:	e7916305 	ldr	r6, [r1, r5, lsl #6]
         ADD R5, R5, #1            //j = j+1
- 100:	e2855001 	add	r5, r5, #1
+ 120:	e2855001 	add	r5, r5, #1
         CMP R5, R2                //compare j with 256
- 104:	e1550002 	cmp	r5, r2
+ 124:	e1550002 	cmp	r5, r2
         BLT L_inner_loop          //branch if less than
- 108:	bafffffb 	blt	fc <L_inner_loop>
+ 128:	bafffffb 	blt	11c <L_inner_loop>
         ADD R4, R4, #1            //i = i +1
- 10c:	e2844001 	add	r4, r4, #1
+ 12c:	e2844001 	add	r4, r4, #1
         CMP R4, R3                //compare i with 2
- 110:	e1540003 	cmp	r4, r3
+ 130:	e1540003 	cmp	r4, r3
         BLT L_outer_loop          //
- 114:	bafffff7 	blt	f8 <L_outer_loop>
+ 134:	bafffff7 	blt	118 <L_outer_loop>
 
         // Step 7: stop counters
         MOV R0, #0
- 118:	e3a00000 	mov	r0, #0
+ 138:	e3a00000 	mov	r0, #0
         MCR p15, 0, R0, c9, c12, 0 //write 0 t PMCR to stop counters
- 11c:	ee090f1c 	mcr	15, 0, r0, cr9, cr12, {0}
+ 13c:	ee090f1c 	mcr	15, 0, r0, cr9, cr12, {0}
 
 
         //Step 8 - 10 Select PMN0 and read out result into R3
         MOV R0, #0                 //PMN0
- 120:	e3a00000 	mov	r0, #0
+ 140:	e3a00000 	mov	r0, #0
         MCR p15, 0, R0, c9, c12, 5 //Write 0 to PMSELR
- 124:	ee090fbc 	mcr	15, 0, r0, cr9, cr12, {5}
+ 144:	ee090fbc 	mcr	15, 0, r0, cr9, cr12, {5}
         MRC p15, 0, R3, c9, c13, 2 //Read PMXEVCNTR into R3
- 128:	ee193f5d 	mrc	15, 0, r3, cr9, cr13, {2}
+ 148:	ee193f5d 	mrc	15, 0, r3, cr9, cr13, {2}
 
-0000012c <end>:
+        MOV R0, #1                //PMN1
+ 14c:	e3a00001 	mov	r0, #1
+        MCR p15, 0, R0, c9, c12, 5 //Write 1 to PMSELR
+ 150:	ee090fbc 	mcr	15, 0, r0, cr9, cr12, {5}
+        MRC P15, 0, R7, c9, c13, 2 //Read PMXEVCNTR into R7
+ 154:	ee197f5d 	mrc	15, 0, r7, cr9, cr13, {2}
+
+        MOV R0, #2               //PMN2
+ 158:	e3a00002 	mov	r0, #2
+        MCR p15, 0, R0, c9, c12, 5 //Write 2 to PMSELR
+ 15c:	ee090fbc 	mcr	15, 0, r0, cr9, cr12, {5}
+        MRC p15, 0, R8, c9, c13, 2 //Read PMXEVCNTR into R8
+ 160:	ee198f5d 	mrc	15, 0, r8, cr9, cr13, {2}
+
+00000164 <end>:
+
+
+
 end:   B end                       //wait here
- 12c:	eafffffe 	b	12c <end>
+ 164:	eafffffe 	b	164 <end>
