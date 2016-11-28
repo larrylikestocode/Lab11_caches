@@ -36,12 +36,12 @@ L3:   ADD R4, R1,R2,LSL #1  // R4(temp address) = k*N +j
       ADD R4, R11, R4, LSL #3  // temp address * 8
       .word 0xED945B00//FLDD D5,[R4,#0] // store the value in array B to D5
 
-      ADD R5, R2, R1, LSL #1  // R5(temp address) = i*N+k
+      ADD R5, R2, R0, LSL #1  // R5(temp address) = i*N+k
       ADD R5, R10, R5, LSL #3 // temp address *8
       .word 0xED956B00//FLDD D6,[R5,#0] // store the value in array A to D6
 
       .word 0xEE257B06//FMULD D7, D5, D6 //multiply the two value from A and B arrays
-      .word 0xEE374B04//FADDD D4, D4, D7 // sum = sum + result of the multiply
+      .word 0xEE344B07//FADDD D4, D4, D7 // sum = sum + result of the multiply
       ADD R2,R2,#1  //k = k+1
       CMP R2, R7
       BLT L3        //if(k<N) go to L3

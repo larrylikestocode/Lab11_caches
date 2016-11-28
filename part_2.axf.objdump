@@ -1,0 +1,127 @@
+
+C:/Users/Larry/Documents/GitHub/Lab11_caches/part_2.axf:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+00000000 <__cs3_interrupt_vector>:
+           .double 3.74
+array_size:
+           .word 2
+_start:
+
+      LDR R10, =my_array_A  // R10 has the address of the my_array_A
+   0:	9999999a 	.word	0x9999999a
+   4:	3ff19999 	.word	0x3ff19999
+   8:	33333333 	.word	0x33333333
+   c:	3ff33333 	.word	0x3ff33333
+  10:	cccccccd 	.word	0xcccccccd
+  14:	4000cccc 	.word	0x4000cccc
+  18:	9999999a 	.word	0x9999999a
+  1c:	40019999 	.word	0x40019999
+
+00000020 <my_array_B>:
+  20:	7ae147ae 	.word	0x7ae147ae
+  24:	3ff7ae14 	.word	0x3ff7ae14
+  28:	51eb851f 	.word	0x51eb851f
+  2c:	3ff91eb8 	.word	0x3ff91eb8
+  30:	a3d70a3d 	.word	0xa3d70a3d
+  34:	40063d70 	.word	0x40063d70
+  38:	1eb851ec 	.word	0x1eb851ec
+  3c:	400deb85 	.word	0x400deb85
+
+00000040 <array_size>:
+  40:	00000002 	.word	0x00000002
+
+00000044 <_start>:
+  44:	e59fa09c 	ldr	r10, [pc, #156]	; e8 <result_array+0x20>
+      LDR R11, =my_array_B  // R11 has the address of the my_array_B
+  48:	e59fb09c 	ldr	r11, [pc, #156]	; ec <result_array+0x24>
+      LDR R9, =result_array // R9 has the address of the result_array
+  4c:	e59f909c 	ldr	r9, [pc, #156]	; f0 <result_array+0x28>
+      LDR R12, =array_size  // R12 has the address of size of the array N
+  50:	e59fc09c 	ldr	r12, [pc, #156]	; f4 <result_array+0x2c>
+      LDR R7, [R12] // r7 has the size of the array
+  54:	e59c7000 	ldr	r7, [r12]
+
+      MOV R0, #0    // i = 0 initially
+  58:	e3a00000 	mov	r0, #0
+
+0000005c <L1>:
+L1:   MOV R1, #0    // j = 0 initially
+  5c:	e3a01000 	mov	r1, #0
+
+00000060 <L2>:
+      //MOV R10, #0   //S
+L2:   MOV R2, #0    // K = 0 initially
+  60:	e3a02000 	mov	r2, #0
+
+00000064 <SUM>:
+	...
+
+SUM: .double 0.0
+      LDR R8, =SUM // R8 has the address of the
+  6c:	e59f8084 	ldr	r8, [pc, #132]	; f8 <result_array+0x30>
+  70:	ed984b00 	.word	0xed984b00
+
+00000074 <L3>:
+      .word 0xED984B00//FLDD D4, [R8,#0] //D4 has the value of sum 0.0, for every loop in J, we clear the sum
+
+
+L3:   ADD R4, R1,R2,LSL #1  // R4(temp address) = k*N +j
+  74:	e0814082 	add	r4, r1, r2, lsl #1
+      ADD R4, R11, R4, LSL #3  // temp address * 8
+  78:	e08b4184 	add	r4, r11, r4, lsl #3
+  7c:	ed945b00 	.word	0xed945b00
+      .word 0xED945B00//FLDD D5,[R4,#0] // store the value in array B to D5
+
+      ADD R5, R2, R0, LSL #1  // R5(temp address) = i*N+k
+  80:	e0825080 	add	r5, r2, r0, lsl #1
+      ADD R5, R10, R5, LSL #3 // temp address *8
+  84:	e08a5185 	add	r5, r10, r5, lsl #3
+  88:	ed956b00 	.word	0xed956b00
+  8c:	ee257b06 	.word	0xee257b06
+  90:	ee344b07 	.word	0xee344b07
+      .word 0xED956B00//FLDD D6,[R5,#0] // store the value in array A to D6
+
+      .word 0xEE257B06//FMULD D7, D5, D6 //multiply the two value from A and B arrays
+      .word 0xEE344B07//FADDD D4, D4, D7 // sum = sum + result of the multiply
+      ADD R2,R2,#1  //k = k+1
+  94:	e2822001 	add	r2, r2, #1
+      CMP R2, R7
+  98:	e1520007 	cmp	r2, r7
+      BLT L3        //if(k<N) go to L3
+  9c:	bafffff4 	blt	74 <L3>
+      ADD R3, R1, R0, LSL #1 // address = i*size(row) +j
+  a0:	e0813080 	add	r3, r1, r0, lsl #1
+      //alternatively  MUL R3, R0, R7 - i*n
+      //ADD R3, R3, R1 -  +j
+      ADD R3, R9, R3, LSL #3
+  a4:	e0893183 	add	r3, r9, r3, lsl #3
+  a8:	ed834b00 	.word	0xed834b00
+      .word 0xED834B00//FSTD  D4, [R3, #0]  //store the value to the result_array
+
+      ADD R1, R1, #1 // j = j + 1
+  ac:	e2811001 	add	r1, r1, #1
+      CMP R1, R7  //(if j<N) go to L2
+  b0:	e1510007 	cmp	r1, r7
+      BLT L2
+  b4:	baffffe9 	blt	60 <L2>
+      ADD R0, R0, #1 // i = i + 1
+  b8:	e2800001 	add	r0, r0, #1
+      CMP R0, R7 // if(i<N) go TO L1
+  bc:	e1500007 	cmp	r0, r7
+      BLT L1
+  c0:	baffffe5 	blt	5c <L1>
+
+000000c4 <end>:
+
+      end:  B end         //wait here
+  c4:	eafffffe 	b	c4 <end>
+
+000000c8 <result_array>:
+	...
+  ec:	00000020 	.word	0x00000020
+  f0:	000000c8 	.word	0x000000c8
+  f4:	00000040 	.word	0x00000040
+  f8:	00000064 	.word	0x00000064
