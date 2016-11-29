@@ -1,0 +1,1870 @@
+
+C:/Users/Larry/Documents/GitHub/Lab11_caches/part_2/matrix.axf:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+00000000 <__cs3_interrupt_vector>:
+    .text
+    .global _start
+
+
+_start:
+        BL CONFIG_VIRTUAL_MEMORY
+       0:	9999999a 	.word	0x9999999a
+       4:	3ff19999 	.word	0x3ff19999
+       8:	33333333 	.word	0x33333333
+       c:	3ff33333 	.word	0x3ff33333
+      10:	cccccccd 	.word	0xcccccccd
+      14:	4000cccc 	.word	0x4000cccc
+      18:	9999999a 	.word	0x9999999a
+      1c:	40019999 	.word	0x40019999
+      20:	66666666 	.word	0x66666666
+      24:	3ff66666 	.word	0x3ff66666
+      28:	cccccccd 	.word	0xcccccccd
+      2c:	3ff4cccc 	.word	0x3ff4cccc
+      30:	00000000 	.word	0x00000000
+      34:	3ff80000 	.word	0x3ff80000
+      38:	9999999a 	.word	0x9999999a
+      3c:	3ff99999 	.word	0x3ff99999
+      40:	9999999a 	.word	0x9999999a
+      44:	3ff19999 	.word	0x3ff19999
+      48:	33333333 	.word	0x33333333
+      4c:	3ff33333 	.word	0x3ff33333
+      50:	cccccccd 	.word	0xcccccccd
+      54:	4000cccc 	.word	0x4000cccc
+      58:	9999999a 	.word	0x9999999a
+      5c:	40019999 	.word	0x40019999
+      60:	66666666 	.word	0x66666666
+      64:	3ff66666 	.word	0x3ff66666
+      68:	cccccccd 	.word	0xcccccccd
+      6c:	3ff4cccc 	.word	0x3ff4cccc
+      70:	00000000 	.word	0x00000000
+      74:	3ff80000 	.word	0x3ff80000
+      78:	9999999a 	.word	0x9999999a
+      7c:	3ff99999 	.word	0x3ff99999
+      80:	9999999a 	.word	0x9999999a
+      84:	3ff19999 	.word	0x3ff19999
+      88:	33333333 	.word	0x33333333
+      8c:	3ff33333 	.word	0x3ff33333
+      90:	cccccccd 	.word	0xcccccccd
+      94:	4000cccc 	.word	0x4000cccc
+      98:	9999999a 	.word	0x9999999a
+      9c:	40019999 	.word	0x40019999
+      a0:	66666666 	.word	0x66666666
+      a4:	3ff66666 	.word	0x3ff66666
+      a8:	cccccccd 	.word	0xcccccccd
+      ac:	3ff4cccc 	.word	0x3ff4cccc
+      b0:	00000000 	.word	0x00000000
+      b4:	3ff80000 	.word	0x3ff80000
+      b8:	9999999a 	.word	0x9999999a
+      bc:	3ff99999 	.word	0x3ff99999
+      c0:	9999999a 	.word	0x9999999a
+      c4:	3ff19999 	.word	0x3ff19999
+      c8:	33333333 	.word	0x33333333
+      cc:	3ff33333 	.word	0x3ff33333
+      d0:	cccccccd 	.word	0xcccccccd
+      d4:	4000cccc 	.word	0x4000cccc
+      d8:	9999999a 	.word	0x9999999a
+      dc:	40019999 	.word	0x40019999
+      e0:	66666666 	.word	0x66666666
+      e4:	3ff66666 	.word	0x3ff66666
+      e8:	cccccccd 	.word	0xcccccccd
+      ec:	3ff4cccc 	.word	0x3ff4cccc
+      f0:	00000000 	.word	0x00000000
+      f4:	3ff80000 	.word	0x3ff80000
+      f8:	9999999a 	.word	0x9999999a
+      fc:	3ff99999 	.word	0x3ff99999
+     100:	9999999a 	.word	0x9999999a
+     104:	3ff19999 	.word	0x3ff19999
+     108:	33333333 	.word	0x33333333
+     10c:	3ff33333 	.word	0x3ff33333
+     110:	cccccccd 	.word	0xcccccccd
+     114:	4000cccc 	.word	0x4000cccc
+     118:	9999999a 	.word	0x9999999a
+     11c:	40019999 	.word	0x40019999
+     120:	66666666 	.word	0x66666666
+     124:	3ff66666 	.word	0x3ff66666
+     128:	cccccccd 	.word	0xcccccccd
+     12c:	3ff4cccc 	.word	0x3ff4cccc
+     130:	00000000 	.word	0x00000000
+     134:	3ff80000 	.word	0x3ff80000
+     138:	9999999a 	.word	0x9999999a
+     13c:	3ff99999 	.word	0x3ff99999
+     140:	9999999a 	.word	0x9999999a
+     144:	3ff19999 	.word	0x3ff19999
+     148:	33333333 	.word	0x33333333
+     14c:	3ff33333 	.word	0x3ff33333
+     150:	cccccccd 	.word	0xcccccccd
+     154:	4000cccc 	.word	0x4000cccc
+     158:	9999999a 	.word	0x9999999a
+     15c:	40019999 	.word	0x40019999
+     160:	66666666 	.word	0x66666666
+     164:	3ff66666 	.word	0x3ff66666
+     168:	cccccccd 	.word	0xcccccccd
+     16c:	3ff4cccc 	.word	0x3ff4cccc
+     170:	00000000 	.word	0x00000000
+     174:	3ff80000 	.word	0x3ff80000
+     178:	9999999a 	.word	0x9999999a
+     17c:	3ff99999 	.word	0x3ff99999
+     180:	9999999a 	.word	0x9999999a
+     184:	3ff19999 	.word	0x3ff19999
+     188:	33333333 	.word	0x33333333
+     18c:	3ff33333 	.word	0x3ff33333
+     190:	cccccccd 	.word	0xcccccccd
+     194:	4000cccc 	.word	0x4000cccc
+     198:	9999999a 	.word	0x9999999a
+     19c:	40019999 	.word	0x40019999
+     1a0:	66666666 	.word	0x66666666
+     1a4:	3ff66666 	.word	0x3ff66666
+     1a8:	cccccccd 	.word	0xcccccccd
+     1ac:	3ff4cccc 	.word	0x3ff4cccc
+     1b0:	00000000 	.word	0x00000000
+     1b4:	3ff80000 	.word	0x3ff80000
+     1b8:	9999999a 	.word	0x9999999a
+     1bc:	3ff99999 	.word	0x3ff99999
+     1c0:	9999999a 	.word	0x9999999a
+     1c4:	3ff19999 	.word	0x3ff19999
+     1c8:	33333333 	.word	0x33333333
+     1cc:	3ff33333 	.word	0x3ff33333
+     1d0:	cccccccd 	.word	0xcccccccd
+     1d4:	4000cccc 	.word	0x4000cccc
+     1d8:	9999999a 	.word	0x9999999a
+     1dc:	40019999 	.word	0x40019999
+     1e0:	66666666 	.word	0x66666666
+     1e4:	3ff66666 	.word	0x3ff66666
+     1e8:	cccccccd 	.word	0xcccccccd
+     1ec:	3ff4cccc 	.word	0x3ff4cccc
+     1f0:	00000000 	.word	0x00000000
+     1f4:	3ff80000 	.word	0x3ff80000
+     1f8:	9999999a 	.word	0x9999999a
+     1fc:	3ff99999 	.word	0x3ff99999
+     200:	9999999a 	.word	0x9999999a
+     204:	3ff19999 	.word	0x3ff19999
+     208:	33333333 	.word	0x33333333
+     20c:	3ff33333 	.word	0x3ff33333
+     210:	cccccccd 	.word	0xcccccccd
+     214:	4000cccc 	.word	0x4000cccc
+     218:	9999999a 	.word	0x9999999a
+     21c:	40019999 	.word	0x40019999
+     220:	66666666 	.word	0x66666666
+     224:	3ff66666 	.word	0x3ff66666
+     228:	cccccccd 	.word	0xcccccccd
+     22c:	3ff4cccc 	.word	0x3ff4cccc
+     230:	00000000 	.word	0x00000000
+     234:	3ff80000 	.word	0x3ff80000
+     238:	9999999a 	.word	0x9999999a
+     23c:	3ff99999 	.word	0x3ff99999
+     240:	9999999a 	.word	0x9999999a
+     244:	3ff19999 	.word	0x3ff19999
+     248:	33333333 	.word	0x33333333
+     24c:	3ff33333 	.word	0x3ff33333
+     250:	cccccccd 	.word	0xcccccccd
+     254:	4000cccc 	.word	0x4000cccc
+     258:	9999999a 	.word	0x9999999a
+     25c:	40019999 	.word	0x40019999
+     260:	66666666 	.word	0x66666666
+     264:	3ff66666 	.word	0x3ff66666
+     268:	cccccccd 	.word	0xcccccccd
+     26c:	3ff4cccc 	.word	0x3ff4cccc
+     270:	00000000 	.word	0x00000000
+     274:	3ff80000 	.word	0x3ff80000
+     278:	9999999a 	.word	0x9999999a
+     27c:	3ff99999 	.word	0x3ff99999
+     280:	9999999a 	.word	0x9999999a
+     284:	3ff19999 	.word	0x3ff19999
+     288:	33333333 	.word	0x33333333
+     28c:	3ff33333 	.word	0x3ff33333
+     290:	cccccccd 	.word	0xcccccccd
+     294:	4000cccc 	.word	0x4000cccc
+     298:	9999999a 	.word	0x9999999a
+     29c:	40019999 	.word	0x40019999
+     2a0:	66666666 	.word	0x66666666
+     2a4:	3ff66666 	.word	0x3ff66666
+     2a8:	cccccccd 	.word	0xcccccccd
+     2ac:	3ff4cccc 	.word	0x3ff4cccc
+     2b0:	00000000 	.word	0x00000000
+     2b4:	3ff80000 	.word	0x3ff80000
+     2b8:	9999999a 	.word	0x9999999a
+     2bc:	3ff99999 	.word	0x3ff99999
+     2c0:	9999999a 	.word	0x9999999a
+     2c4:	3ff19999 	.word	0x3ff19999
+     2c8:	33333333 	.word	0x33333333
+     2cc:	3ff33333 	.word	0x3ff33333
+     2d0:	cccccccd 	.word	0xcccccccd
+     2d4:	4000cccc 	.word	0x4000cccc
+     2d8:	9999999a 	.word	0x9999999a
+     2dc:	40019999 	.word	0x40019999
+     2e0:	66666666 	.word	0x66666666
+     2e4:	3ff66666 	.word	0x3ff66666
+     2e8:	cccccccd 	.word	0xcccccccd
+     2ec:	3ff4cccc 	.word	0x3ff4cccc
+     2f0:	00000000 	.word	0x00000000
+     2f4:	3ff80000 	.word	0x3ff80000
+     2f8:	9999999a 	.word	0x9999999a
+     2fc:	3ff99999 	.word	0x3ff99999
+     300:	9999999a 	.word	0x9999999a
+     304:	3ff19999 	.word	0x3ff19999
+     308:	33333333 	.word	0x33333333
+     30c:	3ff33333 	.word	0x3ff33333
+     310:	cccccccd 	.word	0xcccccccd
+     314:	4000cccc 	.word	0x4000cccc
+     318:	9999999a 	.word	0x9999999a
+     31c:	40019999 	.word	0x40019999
+     320:	66666666 	.word	0x66666666
+     324:	3ff66666 	.word	0x3ff66666
+     328:	cccccccd 	.word	0xcccccccd
+     32c:	3ff4cccc 	.word	0x3ff4cccc
+     330:	00000000 	.word	0x00000000
+     334:	3ff80000 	.word	0x3ff80000
+     338:	9999999a 	.word	0x9999999a
+     33c:	3ff99999 	.word	0x3ff99999
+     340:	9999999a 	.word	0x9999999a
+     344:	3ff19999 	.word	0x3ff19999
+     348:	33333333 	.word	0x33333333
+     34c:	3ff33333 	.word	0x3ff33333
+     350:	cccccccd 	.word	0xcccccccd
+     354:	4000cccc 	.word	0x4000cccc
+     358:	9999999a 	.word	0x9999999a
+     35c:	40019999 	.word	0x40019999
+     360:	66666666 	.word	0x66666666
+     364:	3ff66666 	.word	0x3ff66666
+     368:	cccccccd 	.word	0xcccccccd
+     36c:	3ff4cccc 	.word	0x3ff4cccc
+     370:	00000000 	.word	0x00000000
+     374:	3ff80000 	.word	0x3ff80000
+     378:	9999999a 	.word	0x9999999a
+     37c:	3ff99999 	.word	0x3ff99999
+     380:	9999999a 	.word	0x9999999a
+     384:	3ff19999 	.word	0x3ff19999
+     388:	33333333 	.word	0x33333333
+     38c:	3ff33333 	.word	0x3ff33333
+     390:	cccccccd 	.word	0xcccccccd
+     394:	4000cccc 	.word	0x4000cccc
+     398:	9999999a 	.word	0x9999999a
+     39c:	40019999 	.word	0x40019999
+     3a0:	66666666 	.word	0x66666666
+     3a4:	3ff66666 	.word	0x3ff66666
+     3a8:	cccccccd 	.word	0xcccccccd
+     3ac:	3ff4cccc 	.word	0x3ff4cccc
+     3b0:	00000000 	.word	0x00000000
+     3b4:	3ff80000 	.word	0x3ff80000
+     3b8:	9999999a 	.word	0x9999999a
+     3bc:	3ff99999 	.word	0x3ff99999
+     3c0:	9999999a 	.word	0x9999999a
+     3c4:	3ff19999 	.word	0x3ff19999
+     3c8:	33333333 	.word	0x33333333
+     3cc:	3ff33333 	.word	0x3ff33333
+     3d0:	cccccccd 	.word	0xcccccccd
+     3d4:	4000cccc 	.word	0x4000cccc
+     3d8:	9999999a 	.word	0x9999999a
+     3dc:	40019999 	.word	0x40019999
+     3e0:	66666666 	.word	0x66666666
+     3e4:	3ff66666 	.word	0x3ff66666
+     3e8:	cccccccd 	.word	0xcccccccd
+     3ec:	3ff4cccc 	.word	0x3ff4cccc
+     3f0:	00000000 	.word	0x00000000
+     3f4:	3ff80000 	.word	0x3ff80000
+     3f8:	9999999a 	.word	0x9999999a
+     3fc:	3ff99999 	.word	0x3ff99999
+     400:	9999999a 	.word	0x9999999a
+     404:	3ff19999 	.word	0x3ff19999
+     408:	33333333 	.word	0x33333333
+     40c:	3ff33333 	.word	0x3ff33333
+     410:	cccccccd 	.word	0xcccccccd
+     414:	4000cccc 	.word	0x4000cccc
+     418:	9999999a 	.word	0x9999999a
+     41c:	40019999 	.word	0x40019999
+     420:	66666666 	.word	0x66666666
+     424:	3ff66666 	.word	0x3ff66666
+     428:	cccccccd 	.word	0xcccccccd
+     42c:	3ff4cccc 	.word	0x3ff4cccc
+     430:	00000000 	.word	0x00000000
+     434:	3ff80000 	.word	0x3ff80000
+     438:	9999999a 	.word	0x9999999a
+     43c:	3ff99999 	.word	0x3ff99999
+     440:	9999999a 	.word	0x9999999a
+     444:	3ff19999 	.word	0x3ff19999
+     448:	33333333 	.word	0x33333333
+     44c:	3ff33333 	.word	0x3ff33333
+     450:	cccccccd 	.word	0xcccccccd
+     454:	4000cccc 	.word	0x4000cccc
+     458:	9999999a 	.word	0x9999999a
+     45c:	40019999 	.word	0x40019999
+     460:	66666666 	.word	0x66666666
+     464:	3ff66666 	.word	0x3ff66666
+     468:	cccccccd 	.word	0xcccccccd
+     46c:	3ff4cccc 	.word	0x3ff4cccc
+     470:	00000000 	.word	0x00000000
+     474:	3ff80000 	.word	0x3ff80000
+     478:	9999999a 	.word	0x9999999a
+     47c:	3ff99999 	.word	0x3ff99999
+     480:	9999999a 	.word	0x9999999a
+     484:	3ff19999 	.word	0x3ff19999
+     488:	33333333 	.word	0x33333333
+     48c:	3ff33333 	.word	0x3ff33333
+     490:	cccccccd 	.word	0xcccccccd
+     494:	4000cccc 	.word	0x4000cccc
+     498:	9999999a 	.word	0x9999999a
+     49c:	40019999 	.word	0x40019999
+     4a0:	66666666 	.word	0x66666666
+     4a4:	3ff66666 	.word	0x3ff66666
+     4a8:	cccccccd 	.word	0xcccccccd
+     4ac:	3ff4cccc 	.word	0x3ff4cccc
+     4b0:	00000000 	.word	0x00000000
+     4b4:	3ff80000 	.word	0x3ff80000
+     4b8:	9999999a 	.word	0x9999999a
+     4bc:	3ff99999 	.word	0x3ff99999
+     4c0:	9999999a 	.word	0x9999999a
+     4c4:	3ff19999 	.word	0x3ff19999
+     4c8:	33333333 	.word	0x33333333
+     4cc:	3ff33333 	.word	0x3ff33333
+     4d0:	cccccccd 	.word	0xcccccccd
+     4d4:	4000cccc 	.word	0x4000cccc
+     4d8:	9999999a 	.word	0x9999999a
+     4dc:	40019999 	.word	0x40019999
+     4e0:	66666666 	.word	0x66666666
+     4e4:	3ff66666 	.word	0x3ff66666
+     4e8:	cccccccd 	.word	0xcccccccd
+     4ec:	3ff4cccc 	.word	0x3ff4cccc
+     4f0:	00000000 	.word	0x00000000
+     4f4:	3ff80000 	.word	0x3ff80000
+     4f8:	9999999a 	.word	0x9999999a
+     4fc:	3ff99999 	.word	0x3ff99999
+     500:	9999999a 	.word	0x9999999a
+     504:	3ff19999 	.word	0x3ff19999
+     508:	33333333 	.word	0x33333333
+     50c:	3ff33333 	.word	0x3ff33333
+     510:	cccccccd 	.word	0xcccccccd
+     514:	4000cccc 	.word	0x4000cccc
+     518:	9999999a 	.word	0x9999999a
+     51c:	40019999 	.word	0x40019999
+     520:	66666666 	.word	0x66666666
+     524:	3ff66666 	.word	0x3ff66666
+     528:	cccccccd 	.word	0xcccccccd
+     52c:	3ff4cccc 	.word	0x3ff4cccc
+     530:	00000000 	.word	0x00000000
+     534:	3ff80000 	.word	0x3ff80000
+     538:	9999999a 	.word	0x9999999a
+     53c:	3ff99999 	.word	0x3ff99999
+     540:	9999999a 	.word	0x9999999a
+     544:	3ff19999 	.word	0x3ff19999
+     548:	33333333 	.word	0x33333333
+     54c:	3ff33333 	.word	0x3ff33333
+     550:	cccccccd 	.word	0xcccccccd
+     554:	4000cccc 	.word	0x4000cccc
+     558:	9999999a 	.word	0x9999999a
+     55c:	40019999 	.word	0x40019999
+     560:	66666666 	.word	0x66666666
+     564:	3ff66666 	.word	0x3ff66666
+     568:	cccccccd 	.word	0xcccccccd
+     56c:	3ff4cccc 	.word	0x3ff4cccc
+     570:	00000000 	.word	0x00000000
+     574:	3ff80000 	.word	0x3ff80000
+     578:	9999999a 	.word	0x9999999a
+     57c:	3ff99999 	.word	0x3ff99999
+     580:	9999999a 	.word	0x9999999a
+     584:	3ff19999 	.word	0x3ff19999
+     588:	33333333 	.word	0x33333333
+     58c:	3ff33333 	.word	0x3ff33333
+     590:	cccccccd 	.word	0xcccccccd
+     594:	4000cccc 	.word	0x4000cccc
+     598:	9999999a 	.word	0x9999999a
+     59c:	40019999 	.word	0x40019999
+     5a0:	66666666 	.word	0x66666666
+     5a4:	3ff66666 	.word	0x3ff66666
+     5a8:	cccccccd 	.word	0xcccccccd
+     5ac:	3ff4cccc 	.word	0x3ff4cccc
+     5b0:	00000000 	.word	0x00000000
+     5b4:	3ff80000 	.word	0x3ff80000
+     5b8:	9999999a 	.word	0x9999999a
+     5bc:	3ff99999 	.word	0x3ff99999
+     5c0:	9999999a 	.word	0x9999999a
+     5c4:	3ff19999 	.word	0x3ff19999
+     5c8:	33333333 	.word	0x33333333
+     5cc:	3ff33333 	.word	0x3ff33333
+     5d0:	cccccccd 	.word	0xcccccccd
+     5d4:	4000cccc 	.word	0x4000cccc
+     5d8:	9999999a 	.word	0x9999999a
+     5dc:	40019999 	.word	0x40019999
+     5e0:	66666666 	.word	0x66666666
+     5e4:	3ff66666 	.word	0x3ff66666
+     5e8:	cccccccd 	.word	0xcccccccd
+     5ec:	3ff4cccc 	.word	0x3ff4cccc
+     5f0:	00000000 	.word	0x00000000
+     5f4:	3ff80000 	.word	0x3ff80000
+     5f8:	9999999a 	.word	0x9999999a
+     5fc:	3ff99999 	.word	0x3ff99999
+     600:	9999999a 	.word	0x9999999a
+     604:	3ff19999 	.word	0x3ff19999
+     608:	33333333 	.word	0x33333333
+     60c:	3ff33333 	.word	0x3ff33333
+     610:	cccccccd 	.word	0xcccccccd
+     614:	4000cccc 	.word	0x4000cccc
+     618:	9999999a 	.word	0x9999999a
+     61c:	40019999 	.word	0x40019999
+     620:	66666666 	.word	0x66666666
+     624:	3ff66666 	.word	0x3ff66666
+     628:	cccccccd 	.word	0xcccccccd
+     62c:	3ff4cccc 	.word	0x3ff4cccc
+     630:	00000000 	.word	0x00000000
+     634:	3ff80000 	.word	0x3ff80000
+     638:	9999999a 	.word	0x9999999a
+     63c:	3ff99999 	.word	0x3ff99999
+     640:	9999999a 	.word	0x9999999a
+     644:	3ff19999 	.word	0x3ff19999
+     648:	33333333 	.word	0x33333333
+     64c:	3ff33333 	.word	0x3ff33333
+     650:	cccccccd 	.word	0xcccccccd
+     654:	4000cccc 	.word	0x4000cccc
+     658:	9999999a 	.word	0x9999999a
+     65c:	40019999 	.word	0x40019999
+     660:	66666666 	.word	0x66666666
+     664:	3ff66666 	.word	0x3ff66666
+     668:	cccccccd 	.word	0xcccccccd
+     66c:	3ff4cccc 	.word	0x3ff4cccc
+     670:	00000000 	.word	0x00000000
+     674:	3ff80000 	.word	0x3ff80000
+     678:	9999999a 	.word	0x9999999a
+     67c:	3ff99999 	.word	0x3ff99999
+     680:	9999999a 	.word	0x9999999a
+     684:	3ff19999 	.word	0x3ff19999
+     688:	33333333 	.word	0x33333333
+     68c:	3ff33333 	.word	0x3ff33333
+     690:	cccccccd 	.word	0xcccccccd
+     694:	4000cccc 	.word	0x4000cccc
+     698:	9999999a 	.word	0x9999999a
+     69c:	40019999 	.word	0x40019999
+     6a0:	66666666 	.word	0x66666666
+     6a4:	3ff66666 	.word	0x3ff66666
+     6a8:	cccccccd 	.word	0xcccccccd
+     6ac:	3ff4cccc 	.word	0x3ff4cccc
+     6b0:	00000000 	.word	0x00000000
+     6b4:	3ff80000 	.word	0x3ff80000
+     6b8:	9999999a 	.word	0x9999999a
+     6bc:	3ff99999 	.word	0x3ff99999
+     6c0:	9999999a 	.word	0x9999999a
+     6c4:	3ff19999 	.word	0x3ff19999
+     6c8:	33333333 	.word	0x33333333
+     6cc:	3ff33333 	.word	0x3ff33333
+     6d0:	cccccccd 	.word	0xcccccccd
+     6d4:	4000cccc 	.word	0x4000cccc
+     6d8:	9999999a 	.word	0x9999999a
+     6dc:	40019999 	.word	0x40019999
+     6e0:	66666666 	.word	0x66666666
+     6e4:	3ff66666 	.word	0x3ff66666
+     6e8:	cccccccd 	.word	0xcccccccd
+     6ec:	3ff4cccc 	.word	0x3ff4cccc
+     6f0:	00000000 	.word	0x00000000
+     6f4:	3ff80000 	.word	0x3ff80000
+     6f8:	9999999a 	.word	0x9999999a
+     6fc:	3ff99999 	.word	0x3ff99999
+     700:	9999999a 	.word	0x9999999a
+     704:	3ff19999 	.word	0x3ff19999
+     708:	33333333 	.word	0x33333333
+     70c:	3ff33333 	.word	0x3ff33333
+     710:	cccccccd 	.word	0xcccccccd
+     714:	4000cccc 	.word	0x4000cccc
+     718:	9999999a 	.word	0x9999999a
+     71c:	40019999 	.word	0x40019999
+     720:	66666666 	.word	0x66666666
+     724:	3ff66666 	.word	0x3ff66666
+     728:	cccccccd 	.word	0xcccccccd
+     72c:	3ff4cccc 	.word	0x3ff4cccc
+     730:	00000000 	.word	0x00000000
+     734:	3ff80000 	.word	0x3ff80000
+     738:	9999999a 	.word	0x9999999a
+     73c:	3ff99999 	.word	0x3ff99999
+     740:	9999999a 	.word	0x9999999a
+     744:	3ff19999 	.word	0x3ff19999
+     748:	33333333 	.word	0x33333333
+     74c:	3ff33333 	.word	0x3ff33333
+     750:	cccccccd 	.word	0xcccccccd
+     754:	4000cccc 	.word	0x4000cccc
+     758:	9999999a 	.word	0x9999999a
+     75c:	40019999 	.word	0x40019999
+     760:	66666666 	.word	0x66666666
+     764:	3ff66666 	.word	0x3ff66666
+     768:	cccccccd 	.word	0xcccccccd
+     76c:	3ff4cccc 	.word	0x3ff4cccc
+     770:	00000000 	.word	0x00000000
+     774:	3ff80000 	.word	0x3ff80000
+     778:	9999999a 	.word	0x9999999a
+     77c:	3ff99999 	.word	0x3ff99999
+     780:	9999999a 	.word	0x9999999a
+     784:	3ff19999 	.word	0x3ff19999
+     788:	33333333 	.word	0x33333333
+     78c:	3ff33333 	.word	0x3ff33333
+     790:	cccccccd 	.word	0xcccccccd
+     794:	4000cccc 	.word	0x4000cccc
+     798:	9999999a 	.word	0x9999999a
+     79c:	40019999 	.word	0x40019999
+     7a0:	66666666 	.word	0x66666666
+     7a4:	3ff66666 	.word	0x3ff66666
+     7a8:	cccccccd 	.word	0xcccccccd
+     7ac:	3ff4cccc 	.word	0x3ff4cccc
+     7b0:	00000000 	.word	0x00000000
+     7b4:	3ff80000 	.word	0x3ff80000
+     7b8:	9999999a 	.word	0x9999999a
+     7bc:	3ff99999 	.word	0x3ff99999
+     7c0:	9999999a 	.word	0x9999999a
+     7c4:	3ff19999 	.word	0x3ff19999
+     7c8:	33333333 	.word	0x33333333
+     7cc:	3ff33333 	.word	0x3ff33333
+     7d0:	cccccccd 	.word	0xcccccccd
+     7d4:	4000cccc 	.word	0x4000cccc
+     7d8:	9999999a 	.word	0x9999999a
+     7dc:	40019999 	.word	0x40019999
+     7e0:	66666666 	.word	0x66666666
+     7e4:	3ff66666 	.word	0x3ff66666
+     7e8:	cccccccd 	.word	0xcccccccd
+     7ec:	3ff4cccc 	.word	0x3ff4cccc
+     7f0:	00000000 	.word	0x00000000
+     7f4:	3ff80000 	.word	0x3ff80000
+     7f8:	9999999a 	.word	0x9999999a
+     7fc:	3ff99999 	.word	0x3ff99999
+
+00000800 <my_array_B>:
+     800:	9999999a 	.word	0x9999999a
+     804:	3ff19999 	.word	0x3ff19999
+     808:	33333333 	.word	0x33333333
+     80c:	3ff33333 	.word	0x3ff33333
+     810:	cccccccd 	.word	0xcccccccd
+     814:	4000cccc 	.word	0x4000cccc
+     818:	9999999a 	.word	0x9999999a
+     81c:	40019999 	.word	0x40019999
+     820:	66666666 	.word	0x66666666
+     824:	3ff66666 	.word	0x3ff66666
+     828:	cccccccd 	.word	0xcccccccd
+     82c:	3ff4cccc 	.word	0x3ff4cccc
+     830:	00000000 	.word	0x00000000
+     834:	3ff80000 	.word	0x3ff80000
+     838:	9999999a 	.word	0x9999999a
+     83c:	3ff99999 	.word	0x3ff99999
+     840:	9999999a 	.word	0x9999999a
+     844:	3ff19999 	.word	0x3ff19999
+     848:	33333333 	.word	0x33333333
+     84c:	3ff33333 	.word	0x3ff33333
+     850:	cccccccd 	.word	0xcccccccd
+     854:	4000cccc 	.word	0x4000cccc
+     858:	9999999a 	.word	0x9999999a
+     85c:	40019999 	.word	0x40019999
+     860:	66666666 	.word	0x66666666
+     864:	3ff66666 	.word	0x3ff66666
+     868:	cccccccd 	.word	0xcccccccd
+     86c:	3ff4cccc 	.word	0x3ff4cccc
+     870:	00000000 	.word	0x00000000
+     874:	3ff80000 	.word	0x3ff80000
+     878:	9999999a 	.word	0x9999999a
+     87c:	3ff99999 	.word	0x3ff99999
+     880:	9999999a 	.word	0x9999999a
+     884:	3ff19999 	.word	0x3ff19999
+     888:	33333333 	.word	0x33333333
+     88c:	3ff33333 	.word	0x3ff33333
+     890:	cccccccd 	.word	0xcccccccd
+     894:	4000cccc 	.word	0x4000cccc
+     898:	9999999a 	.word	0x9999999a
+     89c:	40019999 	.word	0x40019999
+     8a0:	66666666 	.word	0x66666666
+     8a4:	3ff66666 	.word	0x3ff66666
+     8a8:	cccccccd 	.word	0xcccccccd
+     8ac:	3ff4cccc 	.word	0x3ff4cccc
+     8b0:	00000000 	.word	0x00000000
+     8b4:	3ff80000 	.word	0x3ff80000
+     8b8:	9999999a 	.word	0x9999999a
+     8bc:	3ff99999 	.word	0x3ff99999
+     8c0:	9999999a 	.word	0x9999999a
+     8c4:	3ff19999 	.word	0x3ff19999
+     8c8:	33333333 	.word	0x33333333
+     8cc:	3ff33333 	.word	0x3ff33333
+     8d0:	cccccccd 	.word	0xcccccccd
+     8d4:	4000cccc 	.word	0x4000cccc
+     8d8:	9999999a 	.word	0x9999999a
+     8dc:	40019999 	.word	0x40019999
+     8e0:	66666666 	.word	0x66666666
+     8e4:	3ff66666 	.word	0x3ff66666
+     8e8:	cccccccd 	.word	0xcccccccd
+     8ec:	3ff4cccc 	.word	0x3ff4cccc
+     8f0:	00000000 	.word	0x00000000
+     8f4:	3ff80000 	.word	0x3ff80000
+     8f8:	9999999a 	.word	0x9999999a
+     8fc:	3ff99999 	.word	0x3ff99999
+     900:	9999999a 	.word	0x9999999a
+     904:	3ff19999 	.word	0x3ff19999
+     908:	33333333 	.word	0x33333333
+     90c:	3ff33333 	.word	0x3ff33333
+     910:	cccccccd 	.word	0xcccccccd
+     914:	4000cccc 	.word	0x4000cccc
+     918:	9999999a 	.word	0x9999999a
+     91c:	40019999 	.word	0x40019999
+     920:	66666666 	.word	0x66666666
+     924:	3ff66666 	.word	0x3ff66666
+     928:	cccccccd 	.word	0xcccccccd
+     92c:	3ff4cccc 	.word	0x3ff4cccc
+     930:	00000000 	.word	0x00000000
+     934:	3ff80000 	.word	0x3ff80000
+     938:	9999999a 	.word	0x9999999a
+     93c:	3ff99999 	.word	0x3ff99999
+     940:	9999999a 	.word	0x9999999a
+     944:	3ff19999 	.word	0x3ff19999
+     948:	33333333 	.word	0x33333333
+     94c:	3ff33333 	.word	0x3ff33333
+     950:	cccccccd 	.word	0xcccccccd
+     954:	4000cccc 	.word	0x4000cccc
+     958:	9999999a 	.word	0x9999999a
+     95c:	40019999 	.word	0x40019999
+     960:	66666666 	.word	0x66666666
+     964:	3ff66666 	.word	0x3ff66666
+     968:	cccccccd 	.word	0xcccccccd
+     96c:	3ff4cccc 	.word	0x3ff4cccc
+     970:	00000000 	.word	0x00000000
+     974:	3ff80000 	.word	0x3ff80000
+     978:	9999999a 	.word	0x9999999a
+     97c:	3ff99999 	.word	0x3ff99999
+     980:	9999999a 	.word	0x9999999a
+     984:	3ff19999 	.word	0x3ff19999
+     988:	33333333 	.word	0x33333333
+     98c:	3ff33333 	.word	0x3ff33333
+     990:	cccccccd 	.word	0xcccccccd
+     994:	4000cccc 	.word	0x4000cccc
+     998:	9999999a 	.word	0x9999999a
+     99c:	40019999 	.word	0x40019999
+     9a0:	66666666 	.word	0x66666666
+     9a4:	3ff66666 	.word	0x3ff66666
+     9a8:	cccccccd 	.word	0xcccccccd
+     9ac:	3ff4cccc 	.word	0x3ff4cccc
+     9b0:	00000000 	.word	0x00000000
+     9b4:	3ff80000 	.word	0x3ff80000
+     9b8:	9999999a 	.word	0x9999999a
+     9bc:	3ff99999 	.word	0x3ff99999
+     9c0:	9999999a 	.word	0x9999999a
+     9c4:	3ff19999 	.word	0x3ff19999
+     9c8:	33333333 	.word	0x33333333
+     9cc:	3ff33333 	.word	0x3ff33333
+     9d0:	cccccccd 	.word	0xcccccccd
+     9d4:	4000cccc 	.word	0x4000cccc
+     9d8:	9999999a 	.word	0x9999999a
+     9dc:	40019999 	.word	0x40019999
+     9e0:	66666666 	.word	0x66666666
+     9e4:	3ff66666 	.word	0x3ff66666
+     9e8:	cccccccd 	.word	0xcccccccd
+     9ec:	3ff4cccc 	.word	0x3ff4cccc
+     9f0:	00000000 	.word	0x00000000
+     9f4:	3ff80000 	.word	0x3ff80000
+     9f8:	9999999a 	.word	0x9999999a
+     9fc:	3ff99999 	.word	0x3ff99999
+     a00:	9999999a 	.word	0x9999999a
+     a04:	3ff19999 	.word	0x3ff19999
+     a08:	33333333 	.word	0x33333333
+     a0c:	3ff33333 	.word	0x3ff33333
+     a10:	cccccccd 	.word	0xcccccccd
+     a14:	4000cccc 	.word	0x4000cccc
+     a18:	9999999a 	.word	0x9999999a
+     a1c:	40019999 	.word	0x40019999
+     a20:	66666666 	.word	0x66666666
+     a24:	3ff66666 	.word	0x3ff66666
+     a28:	cccccccd 	.word	0xcccccccd
+     a2c:	3ff4cccc 	.word	0x3ff4cccc
+     a30:	00000000 	.word	0x00000000
+     a34:	3ff80000 	.word	0x3ff80000
+     a38:	9999999a 	.word	0x9999999a
+     a3c:	3ff99999 	.word	0x3ff99999
+     a40:	9999999a 	.word	0x9999999a
+     a44:	3ff19999 	.word	0x3ff19999
+     a48:	33333333 	.word	0x33333333
+     a4c:	3ff33333 	.word	0x3ff33333
+     a50:	cccccccd 	.word	0xcccccccd
+     a54:	4000cccc 	.word	0x4000cccc
+     a58:	9999999a 	.word	0x9999999a
+     a5c:	40019999 	.word	0x40019999
+     a60:	66666666 	.word	0x66666666
+     a64:	3ff66666 	.word	0x3ff66666
+     a68:	cccccccd 	.word	0xcccccccd
+     a6c:	3ff4cccc 	.word	0x3ff4cccc
+     a70:	00000000 	.word	0x00000000
+     a74:	3ff80000 	.word	0x3ff80000
+     a78:	9999999a 	.word	0x9999999a
+     a7c:	3ff99999 	.word	0x3ff99999
+     a80:	9999999a 	.word	0x9999999a
+     a84:	3ff19999 	.word	0x3ff19999
+     a88:	33333333 	.word	0x33333333
+     a8c:	3ff33333 	.word	0x3ff33333
+     a90:	cccccccd 	.word	0xcccccccd
+     a94:	4000cccc 	.word	0x4000cccc
+     a98:	9999999a 	.word	0x9999999a
+     a9c:	40019999 	.word	0x40019999
+     aa0:	66666666 	.word	0x66666666
+     aa4:	3ff66666 	.word	0x3ff66666
+     aa8:	cccccccd 	.word	0xcccccccd
+     aac:	3ff4cccc 	.word	0x3ff4cccc
+     ab0:	00000000 	.word	0x00000000
+     ab4:	3ff80000 	.word	0x3ff80000
+     ab8:	9999999a 	.word	0x9999999a
+     abc:	3ff99999 	.word	0x3ff99999
+     ac0:	9999999a 	.word	0x9999999a
+     ac4:	3ff19999 	.word	0x3ff19999
+     ac8:	33333333 	.word	0x33333333
+     acc:	3ff33333 	.word	0x3ff33333
+     ad0:	cccccccd 	.word	0xcccccccd
+     ad4:	4000cccc 	.word	0x4000cccc
+     ad8:	9999999a 	.word	0x9999999a
+     adc:	40019999 	.word	0x40019999
+     ae0:	66666666 	.word	0x66666666
+     ae4:	3ff66666 	.word	0x3ff66666
+     ae8:	cccccccd 	.word	0xcccccccd
+     aec:	3ff4cccc 	.word	0x3ff4cccc
+     af0:	00000000 	.word	0x00000000
+     af4:	3ff80000 	.word	0x3ff80000
+     af8:	9999999a 	.word	0x9999999a
+     afc:	3ff99999 	.word	0x3ff99999
+     b00:	9999999a 	.word	0x9999999a
+     b04:	3ff19999 	.word	0x3ff19999
+     b08:	33333333 	.word	0x33333333
+     b0c:	3ff33333 	.word	0x3ff33333
+     b10:	cccccccd 	.word	0xcccccccd
+     b14:	4000cccc 	.word	0x4000cccc
+     b18:	9999999a 	.word	0x9999999a
+     b1c:	40019999 	.word	0x40019999
+     b20:	66666666 	.word	0x66666666
+     b24:	3ff66666 	.word	0x3ff66666
+     b28:	cccccccd 	.word	0xcccccccd
+     b2c:	3ff4cccc 	.word	0x3ff4cccc
+     b30:	00000000 	.word	0x00000000
+     b34:	3ff80000 	.word	0x3ff80000
+     b38:	9999999a 	.word	0x9999999a
+     b3c:	3ff99999 	.word	0x3ff99999
+     b40:	9999999a 	.word	0x9999999a
+     b44:	3ff19999 	.word	0x3ff19999
+     b48:	33333333 	.word	0x33333333
+     b4c:	3ff33333 	.word	0x3ff33333
+     b50:	cccccccd 	.word	0xcccccccd
+     b54:	4000cccc 	.word	0x4000cccc
+     b58:	9999999a 	.word	0x9999999a
+     b5c:	40019999 	.word	0x40019999
+     b60:	66666666 	.word	0x66666666
+     b64:	3ff66666 	.word	0x3ff66666
+     b68:	cccccccd 	.word	0xcccccccd
+     b6c:	3ff4cccc 	.word	0x3ff4cccc
+     b70:	00000000 	.word	0x00000000
+     b74:	3ff80000 	.word	0x3ff80000
+     b78:	9999999a 	.word	0x9999999a
+     b7c:	3ff99999 	.word	0x3ff99999
+     b80:	9999999a 	.word	0x9999999a
+     b84:	3ff19999 	.word	0x3ff19999
+     b88:	33333333 	.word	0x33333333
+     b8c:	3ff33333 	.word	0x3ff33333
+     b90:	cccccccd 	.word	0xcccccccd
+     b94:	4000cccc 	.word	0x4000cccc
+     b98:	9999999a 	.word	0x9999999a
+     b9c:	40019999 	.word	0x40019999
+     ba0:	66666666 	.word	0x66666666
+     ba4:	3ff66666 	.word	0x3ff66666
+     ba8:	cccccccd 	.word	0xcccccccd
+     bac:	3ff4cccc 	.word	0x3ff4cccc
+     bb0:	00000000 	.word	0x00000000
+     bb4:	3ff80000 	.word	0x3ff80000
+     bb8:	9999999a 	.word	0x9999999a
+     bbc:	3ff99999 	.word	0x3ff99999
+     bc0:	9999999a 	.word	0x9999999a
+     bc4:	3ff19999 	.word	0x3ff19999
+     bc8:	33333333 	.word	0x33333333
+     bcc:	3ff33333 	.word	0x3ff33333
+     bd0:	cccccccd 	.word	0xcccccccd
+     bd4:	4000cccc 	.word	0x4000cccc
+     bd8:	9999999a 	.word	0x9999999a
+     bdc:	40019999 	.word	0x40019999
+     be0:	66666666 	.word	0x66666666
+     be4:	3ff66666 	.word	0x3ff66666
+     be8:	cccccccd 	.word	0xcccccccd
+     bec:	3ff4cccc 	.word	0x3ff4cccc
+     bf0:	00000000 	.word	0x00000000
+     bf4:	3ff80000 	.word	0x3ff80000
+     bf8:	9999999a 	.word	0x9999999a
+     bfc:	3ff99999 	.word	0x3ff99999
+     c00:	9999999a 	.word	0x9999999a
+     c04:	3ff19999 	.word	0x3ff19999
+     c08:	33333333 	.word	0x33333333
+     c0c:	3ff33333 	.word	0x3ff33333
+     c10:	cccccccd 	.word	0xcccccccd
+     c14:	4000cccc 	.word	0x4000cccc
+     c18:	9999999a 	.word	0x9999999a
+     c1c:	40019999 	.word	0x40019999
+     c20:	66666666 	.word	0x66666666
+     c24:	3ff66666 	.word	0x3ff66666
+     c28:	cccccccd 	.word	0xcccccccd
+     c2c:	3ff4cccc 	.word	0x3ff4cccc
+     c30:	00000000 	.word	0x00000000
+     c34:	3ff80000 	.word	0x3ff80000
+     c38:	9999999a 	.word	0x9999999a
+     c3c:	3ff99999 	.word	0x3ff99999
+     c40:	9999999a 	.word	0x9999999a
+     c44:	3ff19999 	.word	0x3ff19999
+     c48:	33333333 	.word	0x33333333
+     c4c:	3ff33333 	.word	0x3ff33333
+     c50:	cccccccd 	.word	0xcccccccd
+     c54:	4000cccc 	.word	0x4000cccc
+     c58:	9999999a 	.word	0x9999999a
+     c5c:	40019999 	.word	0x40019999
+     c60:	66666666 	.word	0x66666666
+     c64:	3ff66666 	.word	0x3ff66666
+     c68:	cccccccd 	.word	0xcccccccd
+     c6c:	3ff4cccc 	.word	0x3ff4cccc
+     c70:	00000000 	.word	0x00000000
+     c74:	3ff80000 	.word	0x3ff80000
+     c78:	9999999a 	.word	0x9999999a
+     c7c:	3ff99999 	.word	0x3ff99999
+     c80:	9999999a 	.word	0x9999999a
+     c84:	3ff19999 	.word	0x3ff19999
+     c88:	33333333 	.word	0x33333333
+     c8c:	3ff33333 	.word	0x3ff33333
+     c90:	cccccccd 	.word	0xcccccccd
+     c94:	4000cccc 	.word	0x4000cccc
+     c98:	9999999a 	.word	0x9999999a
+     c9c:	40019999 	.word	0x40019999
+     ca0:	66666666 	.word	0x66666666
+     ca4:	3ff66666 	.word	0x3ff66666
+     ca8:	cccccccd 	.word	0xcccccccd
+     cac:	3ff4cccc 	.word	0x3ff4cccc
+     cb0:	00000000 	.word	0x00000000
+     cb4:	3ff80000 	.word	0x3ff80000
+     cb8:	9999999a 	.word	0x9999999a
+     cbc:	3ff99999 	.word	0x3ff99999
+     cc0:	9999999a 	.word	0x9999999a
+     cc4:	3ff19999 	.word	0x3ff19999
+     cc8:	33333333 	.word	0x33333333
+     ccc:	3ff33333 	.word	0x3ff33333
+     cd0:	cccccccd 	.word	0xcccccccd
+     cd4:	4000cccc 	.word	0x4000cccc
+     cd8:	9999999a 	.word	0x9999999a
+     cdc:	40019999 	.word	0x40019999
+     ce0:	66666666 	.word	0x66666666
+     ce4:	3ff66666 	.word	0x3ff66666
+     ce8:	cccccccd 	.word	0xcccccccd
+     cec:	3ff4cccc 	.word	0x3ff4cccc
+     cf0:	00000000 	.word	0x00000000
+     cf4:	3ff80000 	.word	0x3ff80000
+     cf8:	9999999a 	.word	0x9999999a
+     cfc:	3ff99999 	.word	0x3ff99999
+     d00:	9999999a 	.word	0x9999999a
+     d04:	3ff19999 	.word	0x3ff19999
+     d08:	33333333 	.word	0x33333333
+     d0c:	3ff33333 	.word	0x3ff33333
+     d10:	cccccccd 	.word	0xcccccccd
+     d14:	4000cccc 	.word	0x4000cccc
+     d18:	9999999a 	.word	0x9999999a
+     d1c:	40019999 	.word	0x40019999
+     d20:	66666666 	.word	0x66666666
+     d24:	3ff66666 	.word	0x3ff66666
+     d28:	cccccccd 	.word	0xcccccccd
+     d2c:	3ff4cccc 	.word	0x3ff4cccc
+     d30:	00000000 	.word	0x00000000
+     d34:	3ff80000 	.word	0x3ff80000
+     d38:	9999999a 	.word	0x9999999a
+     d3c:	3ff99999 	.word	0x3ff99999
+     d40:	9999999a 	.word	0x9999999a
+     d44:	3ff19999 	.word	0x3ff19999
+     d48:	33333333 	.word	0x33333333
+     d4c:	3ff33333 	.word	0x3ff33333
+     d50:	cccccccd 	.word	0xcccccccd
+     d54:	4000cccc 	.word	0x4000cccc
+     d58:	9999999a 	.word	0x9999999a
+     d5c:	40019999 	.word	0x40019999
+     d60:	66666666 	.word	0x66666666
+     d64:	3ff66666 	.word	0x3ff66666
+     d68:	cccccccd 	.word	0xcccccccd
+     d6c:	3ff4cccc 	.word	0x3ff4cccc
+     d70:	00000000 	.word	0x00000000
+     d74:	3ff80000 	.word	0x3ff80000
+     d78:	9999999a 	.word	0x9999999a
+     d7c:	3ff99999 	.word	0x3ff99999
+     d80:	9999999a 	.word	0x9999999a
+     d84:	3ff19999 	.word	0x3ff19999
+     d88:	33333333 	.word	0x33333333
+     d8c:	3ff33333 	.word	0x3ff33333
+     d90:	cccccccd 	.word	0xcccccccd
+     d94:	4000cccc 	.word	0x4000cccc
+     d98:	9999999a 	.word	0x9999999a
+     d9c:	40019999 	.word	0x40019999
+     da0:	66666666 	.word	0x66666666
+     da4:	3ff66666 	.word	0x3ff66666
+     da8:	cccccccd 	.word	0xcccccccd
+     dac:	3ff4cccc 	.word	0x3ff4cccc
+     db0:	00000000 	.word	0x00000000
+     db4:	3ff80000 	.word	0x3ff80000
+     db8:	9999999a 	.word	0x9999999a
+     dbc:	3ff99999 	.word	0x3ff99999
+     dc0:	9999999a 	.word	0x9999999a
+     dc4:	3ff19999 	.word	0x3ff19999
+     dc8:	33333333 	.word	0x33333333
+     dcc:	3ff33333 	.word	0x3ff33333
+     dd0:	cccccccd 	.word	0xcccccccd
+     dd4:	4000cccc 	.word	0x4000cccc
+     dd8:	9999999a 	.word	0x9999999a
+     ddc:	40019999 	.word	0x40019999
+     de0:	66666666 	.word	0x66666666
+     de4:	3ff66666 	.word	0x3ff66666
+     de8:	cccccccd 	.word	0xcccccccd
+     dec:	3ff4cccc 	.word	0x3ff4cccc
+     df0:	00000000 	.word	0x00000000
+     df4:	3ff80000 	.word	0x3ff80000
+     df8:	9999999a 	.word	0x9999999a
+     dfc:	3ff99999 	.word	0x3ff99999
+     e00:	9999999a 	.word	0x9999999a
+     e04:	3ff19999 	.word	0x3ff19999
+     e08:	33333333 	.word	0x33333333
+     e0c:	3ff33333 	.word	0x3ff33333
+     e10:	cccccccd 	.word	0xcccccccd
+     e14:	4000cccc 	.word	0x4000cccc
+     e18:	9999999a 	.word	0x9999999a
+     e1c:	40019999 	.word	0x40019999
+     e20:	66666666 	.word	0x66666666
+     e24:	3ff66666 	.word	0x3ff66666
+     e28:	cccccccd 	.word	0xcccccccd
+     e2c:	3ff4cccc 	.word	0x3ff4cccc
+     e30:	00000000 	.word	0x00000000
+     e34:	3ff80000 	.word	0x3ff80000
+     e38:	9999999a 	.word	0x9999999a
+     e3c:	3ff99999 	.word	0x3ff99999
+     e40:	9999999a 	.word	0x9999999a
+     e44:	3ff19999 	.word	0x3ff19999
+     e48:	33333333 	.word	0x33333333
+     e4c:	3ff33333 	.word	0x3ff33333
+     e50:	cccccccd 	.word	0xcccccccd
+     e54:	4000cccc 	.word	0x4000cccc
+     e58:	9999999a 	.word	0x9999999a
+     e5c:	40019999 	.word	0x40019999
+     e60:	66666666 	.word	0x66666666
+     e64:	3ff66666 	.word	0x3ff66666
+     e68:	cccccccd 	.word	0xcccccccd
+     e6c:	3ff4cccc 	.word	0x3ff4cccc
+     e70:	00000000 	.word	0x00000000
+     e74:	3ff80000 	.word	0x3ff80000
+     e78:	9999999a 	.word	0x9999999a
+     e7c:	3ff99999 	.word	0x3ff99999
+     e80:	9999999a 	.word	0x9999999a
+     e84:	3ff19999 	.word	0x3ff19999
+     e88:	33333333 	.word	0x33333333
+     e8c:	3ff33333 	.word	0x3ff33333
+     e90:	cccccccd 	.word	0xcccccccd
+     e94:	4000cccc 	.word	0x4000cccc
+     e98:	9999999a 	.word	0x9999999a
+     e9c:	40019999 	.word	0x40019999
+     ea0:	66666666 	.word	0x66666666
+     ea4:	3ff66666 	.word	0x3ff66666
+     ea8:	cccccccd 	.word	0xcccccccd
+     eac:	3ff4cccc 	.word	0x3ff4cccc
+     eb0:	00000000 	.word	0x00000000
+     eb4:	3ff80000 	.word	0x3ff80000
+     eb8:	9999999a 	.word	0x9999999a
+     ebc:	3ff99999 	.word	0x3ff99999
+     ec0:	9999999a 	.word	0x9999999a
+     ec4:	3ff19999 	.word	0x3ff19999
+     ec8:	33333333 	.word	0x33333333
+     ecc:	3ff33333 	.word	0x3ff33333
+     ed0:	cccccccd 	.word	0xcccccccd
+     ed4:	4000cccc 	.word	0x4000cccc
+     ed8:	9999999a 	.word	0x9999999a
+     edc:	40019999 	.word	0x40019999
+     ee0:	66666666 	.word	0x66666666
+     ee4:	3ff66666 	.word	0x3ff66666
+     ee8:	cccccccd 	.word	0xcccccccd
+     eec:	3ff4cccc 	.word	0x3ff4cccc
+     ef0:	00000000 	.word	0x00000000
+     ef4:	3ff80000 	.word	0x3ff80000
+     ef8:	9999999a 	.word	0x9999999a
+     efc:	3ff99999 	.word	0x3ff99999
+     f00:	9999999a 	.word	0x9999999a
+     f04:	3ff19999 	.word	0x3ff19999
+     f08:	33333333 	.word	0x33333333
+     f0c:	3ff33333 	.word	0x3ff33333
+     f10:	cccccccd 	.word	0xcccccccd
+     f14:	4000cccc 	.word	0x4000cccc
+     f18:	9999999a 	.word	0x9999999a
+     f1c:	40019999 	.word	0x40019999
+     f20:	66666666 	.word	0x66666666
+     f24:	3ff66666 	.word	0x3ff66666
+     f28:	cccccccd 	.word	0xcccccccd
+     f2c:	3ff4cccc 	.word	0x3ff4cccc
+     f30:	00000000 	.word	0x00000000
+     f34:	3ff80000 	.word	0x3ff80000
+     f38:	9999999a 	.word	0x9999999a
+     f3c:	3ff99999 	.word	0x3ff99999
+     f40:	9999999a 	.word	0x9999999a
+     f44:	3ff19999 	.word	0x3ff19999
+     f48:	33333333 	.word	0x33333333
+     f4c:	3ff33333 	.word	0x3ff33333
+     f50:	cccccccd 	.word	0xcccccccd
+     f54:	4000cccc 	.word	0x4000cccc
+     f58:	9999999a 	.word	0x9999999a
+     f5c:	40019999 	.word	0x40019999
+     f60:	66666666 	.word	0x66666666
+     f64:	3ff66666 	.word	0x3ff66666
+     f68:	cccccccd 	.word	0xcccccccd
+     f6c:	3ff4cccc 	.word	0x3ff4cccc
+     f70:	00000000 	.word	0x00000000
+     f74:	3ff80000 	.word	0x3ff80000
+     f78:	9999999a 	.word	0x9999999a
+     f7c:	3ff99999 	.word	0x3ff99999
+     f80:	9999999a 	.word	0x9999999a
+     f84:	3ff19999 	.word	0x3ff19999
+     f88:	33333333 	.word	0x33333333
+     f8c:	3ff33333 	.word	0x3ff33333
+     f90:	cccccccd 	.word	0xcccccccd
+     f94:	4000cccc 	.word	0x4000cccc
+     f98:	9999999a 	.word	0x9999999a
+     f9c:	40019999 	.word	0x40019999
+     fa0:	66666666 	.word	0x66666666
+     fa4:	3ff66666 	.word	0x3ff66666
+     fa8:	cccccccd 	.word	0xcccccccd
+     fac:	3ff4cccc 	.word	0x3ff4cccc
+     fb0:	00000000 	.word	0x00000000
+     fb4:	3ff80000 	.word	0x3ff80000
+     fb8:	9999999a 	.word	0x9999999a
+     fbc:	3ff99999 	.word	0x3ff99999
+     fc0:	9999999a 	.word	0x9999999a
+     fc4:	3ff19999 	.word	0x3ff19999
+     fc8:	33333333 	.word	0x33333333
+     fcc:	3ff33333 	.word	0x3ff33333
+     fd0:	cccccccd 	.word	0xcccccccd
+     fd4:	4000cccc 	.word	0x4000cccc
+     fd8:	9999999a 	.word	0x9999999a
+     fdc:	40019999 	.word	0x40019999
+     fe0:	66666666 	.word	0x66666666
+     fe4:	3ff66666 	.word	0x3ff66666
+     fe8:	cccccccd 	.word	0xcccccccd
+     fec:	3ff4cccc 	.word	0x3ff4cccc
+     ff0:	00000000 	.word	0x00000000
+     ff4:	3ff80000 	.word	0x3ff80000
+     ff8:	9999999a 	.word	0x9999999a
+     ffc:	3ff99999 	.word	0x3ff99999
+
+00001000 <result_array>:
+    1000:	9999999a 	.word	0x9999999a
+    1004:	3ff19999 	.word	0x3ff19999
+    1008:	33333333 	.word	0x33333333
+    100c:	3ff33333 	.word	0x3ff33333
+    1010:	cccccccd 	.word	0xcccccccd
+    1014:	4000cccc 	.word	0x4000cccc
+    1018:	9999999a 	.word	0x9999999a
+    101c:	40019999 	.word	0x40019999
+    1020:	66666666 	.word	0x66666666
+    1024:	3ff66666 	.word	0x3ff66666
+    1028:	cccccccd 	.word	0xcccccccd
+    102c:	3ff4cccc 	.word	0x3ff4cccc
+    1030:	00000000 	.word	0x00000000
+    1034:	3ff80000 	.word	0x3ff80000
+    1038:	9999999a 	.word	0x9999999a
+    103c:	3ff99999 	.word	0x3ff99999
+    1040:	9999999a 	.word	0x9999999a
+    1044:	3ff19999 	.word	0x3ff19999
+    1048:	33333333 	.word	0x33333333
+    104c:	3ff33333 	.word	0x3ff33333
+    1050:	cccccccd 	.word	0xcccccccd
+    1054:	4000cccc 	.word	0x4000cccc
+    1058:	9999999a 	.word	0x9999999a
+    105c:	40019999 	.word	0x40019999
+    1060:	66666666 	.word	0x66666666
+    1064:	3ff66666 	.word	0x3ff66666
+    1068:	cccccccd 	.word	0xcccccccd
+    106c:	3ff4cccc 	.word	0x3ff4cccc
+    1070:	00000000 	.word	0x00000000
+    1074:	3ff80000 	.word	0x3ff80000
+    1078:	9999999a 	.word	0x9999999a
+    107c:	3ff99999 	.word	0x3ff99999
+    1080:	9999999a 	.word	0x9999999a
+    1084:	3ff19999 	.word	0x3ff19999
+    1088:	33333333 	.word	0x33333333
+    108c:	3ff33333 	.word	0x3ff33333
+    1090:	cccccccd 	.word	0xcccccccd
+    1094:	4000cccc 	.word	0x4000cccc
+    1098:	9999999a 	.word	0x9999999a
+    109c:	40019999 	.word	0x40019999
+    10a0:	66666666 	.word	0x66666666
+    10a4:	3ff66666 	.word	0x3ff66666
+    10a8:	cccccccd 	.word	0xcccccccd
+    10ac:	3ff4cccc 	.word	0x3ff4cccc
+    10b0:	00000000 	.word	0x00000000
+    10b4:	3ff80000 	.word	0x3ff80000
+    10b8:	9999999a 	.word	0x9999999a
+    10bc:	3ff99999 	.word	0x3ff99999
+    10c0:	9999999a 	.word	0x9999999a
+    10c4:	3ff19999 	.word	0x3ff19999
+    10c8:	33333333 	.word	0x33333333
+    10cc:	3ff33333 	.word	0x3ff33333
+    10d0:	cccccccd 	.word	0xcccccccd
+    10d4:	4000cccc 	.word	0x4000cccc
+    10d8:	9999999a 	.word	0x9999999a
+    10dc:	40019999 	.word	0x40019999
+    10e0:	66666666 	.word	0x66666666
+    10e4:	3ff66666 	.word	0x3ff66666
+    10e8:	cccccccd 	.word	0xcccccccd
+    10ec:	3ff4cccc 	.word	0x3ff4cccc
+    10f0:	00000000 	.word	0x00000000
+    10f4:	3ff80000 	.word	0x3ff80000
+    10f8:	9999999a 	.word	0x9999999a
+    10fc:	3ff99999 	.word	0x3ff99999
+    1100:	9999999a 	.word	0x9999999a
+    1104:	3ff19999 	.word	0x3ff19999
+    1108:	33333333 	.word	0x33333333
+    110c:	3ff33333 	.word	0x3ff33333
+    1110:	cccccccd 	.word	0xcccccccd
+    1114:	4000cccc 	.word	0x4000cccc
+    1118:	9999999a 	.word	0x9999999a
+    111c:	40019999 	.word	0x40019999
+    1120:	66666666 	.word	0x66666666
+    1124:	3ff66666 	.word	0x3ff66666
+    1128:	cccccccd 	.word	0xcccccccd
+    112c:	3ff4cccc 	.word	0x3ff4cccc
+    1130:	00000000 	.word	0x00000000
+    1134:	3ff80000 	.word	0x3ff80000
+    1138:	9999999a 	.word	0x9999999a
+    113c:	3ff99999 	.word	0x3ff99999
+    1140:	9999999a 	.word	0x9999999a
+    1144:	3ff19999 	.word	0x3ff19999
+    1148:	33333333 	.word	0x33333333
+    114c:	3ff33333 	.word	0x3ff33333
+    1150:	cccccccd 	.word	0xcccccccd
+    1154:	4000cccc 	.word	0x4000cccc
+    1158:	9999999a 	.word	0x9999999a
+    115c:	40019999 	.word	0x40019999
+    1160:	66666666 	.word	0x66666666
+    1164:	3ff66666 	.word	0x3ff66666
+    1168:	cccccccd 	.word	0xcccccccd
+    116c:	3ff4cccc 	.word	0x3ff4cccc
+    1170:	00000000 	.word	0x00000000
+    1174:	3ff80000 	.word	0x3ff80000
+    1178:	9999999a 	.word	0x9999999a
+    117c:	3ff99999 	.word	0x3ff99999
+    1180:	9999999a 	.word	0x9999999a
+    1184:	3ff19999 	.word	0x3ff19999
+    1188:	33333333 	.word	0x33333333
+    118c:	3ff33333 	.word	0x3ff33333
+    1190:	cccccccd 	.word	0xcccccccd
+    1194:	4000cccc 	.word	0x4000cccc
+    1198:	9999999a 	.word	0x9999999a
+    119c:	40019999 	.word	0x40019999
+    11a0:	66666666 	.word	0x66666666
+    11a4:	3ff66666 	.word	0x3ff66666
+    11a8:	cccccccd 	.word	0xcccccccd
+    11ac:	3ff4cccc 	.word	0x3ff4cccc
+    11b0:	00000000 	.word	0x00000000
+    11b4:	3ff80000 	.word	0x3ff80000
+    11b8:	9999999a 	.word	0x9999999a
+    11bc:	3ff99999 	.word	0x3ff99999
+    11c0:	9999999a 	.word	0x9999999a
+    11c4:	3ff19999 	.word	0x3ff19999
+    11c8:	33333333 	.word	0x33333333
+    11cc:	3ff33333 	.word	0x3ff33333
+    11d0:	cccccccd 	.word	0xcccccccd
+    11d4:	4000cccc 	.word	0x4000cccc
+    11d8:	9999999a 	.word	0x9999999a
+    11dc:	40019999 	.word	0x40019999
+    11e0:	66666666 	.word	0x66666666
+    11e4:	3ff66666 	.word	0x3ff66666
+    11e8:	cccccccd 	.word	0xcccccccd
+    11ec:	3ff4cccc 	.word	0x3ff4cccc
+    11f0:	00000000 	.word	0x00000000
+    11f4:	3ff80000 	.word	0x3ff80000
+    11f8:	9999999a 	.word	0x9999999a
+    11fc:	3ff99999 	.word	0x3ff99999
+    1200:	9999999a 	.word	0x9999999a
+    1204:	3ff19999 	.word	0x3ff19999
+    1208:	33333333 	.word	0x33333333
+    120c:	3ff33333 	.word	0x3ff33333
+    1210:	cccccccd 	.word	0xcccccccd
+    1214:	4000cccc 	.word	0x4000cccc
+    1218:	9999999a 	.word	0x9999999a
+    121c:	40019999 	.word	0x40019999
+    1220:	66666666 	.word	0x66666666
+    1224:	3ff66666 	.word	0x3ff66666
+    1228:	cccccccd 	.word	0xcccccccd
+    122c:	3ff4cccc 	.word	0x3ff4cccc
+    1230:	00000000 	.word	0x00000000
+    1234:	3ff80000 	.word	0x3ff80000
+    1238:	9999999a 	.word	0x9999999a
+    123c:	3ff99999 	.word	0x3ff99999
+    1240:	9999999a 	.word	0x9999999a
+    1244:	3ff19999 	.word	0x3ff19999
+    1248:	33333333 	.word	0x33333333
+    124c:	3ff33333 	.word	0x3ff33333
+    1250:	cccccccd 	.word	0xcccccccd
+    1254:	4000cccc 	.word	0x4000cccc
+    1258:	9999999a 	.word	0x9999999a
+    125c:	40019999 	.word	0x40019999
+    1260:	66666666 	.word	0x66666666
+    1264:	3ff66666 	.word	0x3ff66666
+    1268:	cccccccd 	.word	0xcccccccd
+    126c:	3ff4cccc 	.word	0x3ff4cccc
+    1270:	00000000 	.word	0x00000000
+    1274:	3ff80000 	.word	0x3ff80000
+    1278:	9999999a 	.word	0x9999999a
+    127c:	3ff99999 	.word	0x3ff99999
+    1280:	9999999a 	.word	0x9999999a
+    1284:	3ff19999 	.word	0x3ff19999
+    1288:	33333333 	.word	0x33333333
+    128c:	3ff33333 	.word	0x3ff33333
+    1290:	cccccccd 	.word	0xcccccccd
+    1294:	4000cccc 	.word	0x4000cccc
+    1298:	9999999a 	.word	0x9999999a
+    129c:	40019999 	.word	0x40019999
+    12a0:	66666666 	.word	0x66666666
+    12a4:	3ff66666 	.word	0x3ff66666
+    12a8:	cccccccd 	.word	0xcccccccd
+    12ac:	3ff4cccc 	.word	0x3ff4cccc
+    12b0:	00000000 	.word	0x00000000
+    12b4:	3ff80000 	.word	0x3ff80000
+    12b8:	9999999a 	.word	0x9999999a
+    12bc:	3ff99999 	.word	0x3ff99999
+    12c0:	9999999a 	.word	0x9999999a
+    12c4:	3ff19999 	.word	0x3ff19999
+    12c8:	33333333 	.word	0x33333333
+    12cc:	3ff33333 	.word	0x3ff33333
+    12d0:	cccccccd 	.word	0xcccccccd
+    12d4:	4000cccc 	.word	0x4000cccc
+    12d8:	9999999a 	.word	0x9999999a
+    12dc:	40019999 	.word	0x40019999
+    12e0:	66666666 	.word	0x66666666
+    12e4:	3ff66666 	.word	0x3ff66666
+    12e8:	cccccccd 	.word	0xcccccccd
+    12ec:	3ff4cccc 	.word	0x3ff4cccc
+    12f0:	00000000 	.word	0x00000000
+    12f4:	3ff80000 	.word	0x3ff80000
+    12f8:	9999999a 	.word	0x9999999a
+    12fc:	3ff99999 	.word	0x3ff99999
+    1300:	9999999a 	.word	0x9999999a
+    1304:	3ff19999 	.word	0x3ff19999
+    1308:	33333333 	.word	0x33333333
+    130c:	3ff33333 	.word	0x3ff33333
+    1310:	cccccccd 	.word	0xcccccccd
+    1314:	4000cccc 	.word	0x4000cccc
+    1318:	9999999a 	.word	0x9999999a
+    131c:	40019999 	.word	0x40019999
+    1320:	66666666 	.word	0x66666666
+    1324:	3ff66666 	.word	0x3ff66666
+    1328:	cccccccd 	.word	0xcccccccd
+    132c:	3ff4cccc 	.word	0x3ff4cccc
+    1330:	00000000 	.word	0x00000000
+    1334:	3ff80000 	.word	0x3ff80000
+    1338:	9999999a 	.word	0x9999999a
+    133c:	3ff99999 	.word	0x3ff99999
+    1340:	9999999a 	.word	0x9999999a
+    1344:	3ff19999 	.word	0x3ff19999
+    1348:	33333333 	.word	0x33333333
+    134c:	3ff33333 	.word	0x3ff33333
+    1350:	cccccccd 	.word	0xcccccccd
+    1354:	4000cccc 	.word	0x4000cccc
+    1358:	9999999a 	.word	0x9999999a
+    135c:	40019999 	.word	0x40019999
+    1360:	66666666 	.word	0x66666666
+    1364:	3ff66666 	.word	0x3ff66666
+    1368:	cccccccd 	.word	0xcccccccd
+    136c:	3ff4cccc 	.word	0x3ff4cccc
+    1370:	00000000 	.word	0x00000000
+    1374:	3ff80000 	.word	0x3ff80000
+    1378:	9999999a 	.word	0x9999999a
+    137c:	3ff99999 	.word	0x3ff99999
+    1380:	9999999a 	.word	0x9999999a
+    1384:	3ff19999 	.word	0x3ff19999
+    1388:	33333333 	.word	0x33333333
+    138c:	3ff33333 	.word	0x3ff33333
+    1390:	cccccccd 	.word	0xcccccccd
+    1394:	4000cccc 	.word	0x4000cccc
+    1398:	9999999a 	.word	0x9999999a
+    139c:	40019999 	.word	0x40019999
+    13a0:	66666666 	.word	0x66666666
+    13a4:	3ff66666 	.word	0x3ff66666
+    13a8:	cccccccd 	.word	0xcccccccd
+    13ac:	3ff4cccc 	.word	0x3ff4cccc
+    13b0:	00000000 	.word	0x00000000
+    13b4:	3ff80000 	.word	0x3ff80000
+    13b8:	9999999a 	.word	0x9999999a
+    13bc:	3ff99999 	.word	0x3ff99999
+    13c0:	9999999a 	.word	0x9999999a
+    13c4:	3ff19999 	.word	0x3ff19999
+    13c8:	33333333 	.word	0x33333333
+    13cc:	3ff33333 	.word	0x3ff33333
+    13d0:	cccccccd 	.word	0xcccccccd
+    13d4:	4000cccc 	.word	0x4000cccc
+    13d8:	9999999a 	.word	0x9999999a
+    13dc:	40019999 	.word	0x40019999
+    13e0:	66666666 	.word	0x66666666
+    13e4:	3ff66666 	.word	0x3ff66666
+    13e8:	cccccccd 	.word	0xcccccccd
+    13ec:	3ff4cccc 	.word	0x3ff4cccc
+    13f0:	00000000 	.word	0x00000000
+    13f4:	3ff80000 	.word	0x3ff80000
+    13f8:	9999999a 	.word	0x9999999a
+    13fc:	3ff99999 	.word	0x3ff99999
+    1400:	9999999a 	.word	0x9999999a
+    1404:	3ff19999 	.word	0x3ff19999
+    1408:	33333333 	.word	0x33333333
+    140c:	3ff33333 	.word	0x3ff33333
+    1410:	cccccccd 	.word	0xcccccccd
+    1414:	4000cccc 	.word	0x4000cccc
+    1418:	9999999a 	.word	0x9999999a
+    141c:	40019999 	.word	0x40019999
+    1420:	66666666 	.word	0x66666666
+    1424:	3ff66666 	.word	0x3ff66666
+    1428:	cccccccd 	.word	0xcccccccd
+    142c:	3ff4cccc 	.word	0x3ff4cccc
+    1430:	00000000 	.word	0x00000000
+    1434:	3ff80000 	.word	0x3ff80000
+    1438:	9999999a 	.word	0x9999999a
+    143c:	3ff99999 	.word	0x3ff99999
+    1440:	9999999a 	.word	0x9999999a
+    1444:	3ff19999 	.word	0x3ff19999
+    1448:	33333333 	.word	0x33333333
+    144c:	3ff33333 	.word	0x3ff33333
+    1450:	cccccccd 	.word	0xcccccccd
+    1454:	4000cccc 	.word	0x4000cccc
+    1458:	9999999a 	.word	0x9999999a
+    145c:	40019999 	.word	0x40019999
+    1460:	66666666 	.word	0x66666666
+    1464:	3ff66666 	.word	0x3ff66666
+    1468:	cccccccd 	.word	0xcccccccd
+    146c:	3ff4cccc 	.word	0x3ff4cccc
+    1470:	00000000 	.word	0x00000000
+    1474:	3ff80000 	.word	0x3ff80000
+    1478:	9999999a 	.word	0x9999999a
+    147c:	3ff99999 	.word	0x3ff99999
+    1480:	9999999a 	.word	0x9999999a
+    1484:	3ff19999 	.word	0x3ff19999
+    1488:	33333333 	.word	0x33333333
+    148c:	3ff33333 	.word	0x3ff33333
+    1490:	cccccccd 	.word	0xcccccccd
+    1494:	4000cccc 	.word	0x4000cccc
+    1498:	9999999a 	.word	0x9999999a
+    149c:	40019999 	.word	0x40019999
+    14a0:	66666666 	.word	0x66666666
+    14a4:	3ff66666 	.word	0x3ff66666
+    14a8:	cccccccd 	.word	0xcccccccd
+    14ac:	3ff4cccc 	.word	0x3ff4cccc
+    14b0:	00000000 	.word	0x00000000
+    14b4:	3ff80000 	.word	0x3ff80000
+    14b8:	9999999a 	.word	0x9999999a
+    14bc:	3ff99999 	.word	0x3ff99999
+    14c0:	9999999a 	.word	0x9999999a
+    14c4:	3ff19999 	.word	0x3ff19999
+    14c8:	33333333 	.word	0x33333333
+    14cc:	3ff33333 	.word	0x3ff33333
+    14d0:	cccccccd 	.word	0xcccccccd
+    14d4:	4000cccc 	.word	0x4000cccc
+    14d8:	9999999a 	.word	0x9999999a
+    14dc:	40019999 	.word	0x40019999
+    14e0:	66666666 	.word	0x66666666
+    14e4:	3ff66666 	.word	0x3ff66666
+    14e8:	cccccccd 	.word	0xcccccccd
+    14ec:	3ff4cccc 	.word	0x3ff4cccc
+    14f0:	00000000 	.word	0x00000000
+    14f4:	3ff80000 	.word	0x3ff80000
+    14f8:	9999999a 	.word	0x9999999a
+    14fc:	3ff99999 	.word	0x3ff99999
+    1500:	9999999a 	.word	0x9999999a
+    1504:	3ff19999 	.word	0x3ff19999
+    1508:	33333333 	.word	0x33333333
+    150c:	3ff33333 	.word	0x3ff33333
+    1510:	cccccccd 	.word	0xcccccccd
+    1514:	4000cccc 	.word	0x4000cccc
+    1518:	9999999a 	.word	0x9999999a
+    151c:	40019999 	.word	0x40019999
+    1520:	66666666 	.word	0x66666666
+    1524:	3ff66666 	.word	0x3ff66666
+    1528:	cccccccd 	.word	0xcccccccd
+    152c:	3ff4cccc 	.word	0x3ff4cccc
+    1530:	00000000 	.word	0x00000000
+    1534:	3ff80000 	.word	0x3ff80000
+    1538:	9999999a 	.word	0x9999999a
+    153c:	3ff99999 	.word	0x3ff99999
+    1540:	9999999a 	.word	0x9999999a
+    1544:	3ff19999 	.word	0x3ff19999
+    1548:	33333333 	.word	0x33333333
+    154c:	3ff33333 	.word	0x3ff33333
+    1550:	cccccccd 	.word	0xcccccccd
+    1554:	4000cccc 	.word	0x4000cccc
+    1558:	9999999a 	.word	0x9999999a
+    155c:	40019999 	.word	0x40019999
+    1560:	66666666 	.word	0x66666666
+    1564:	3ff66666 	.word	0x3ff66666
+    1568:	cccccccd 	.word	0xcccccccd
+    156c:	3ff4cccc 	.word	0x3ff4cccc
+    1570:	00000000 	.word	0x00000000
+    1574:	3ff80000 	.word	0x3ff80000
+    1578:	9999999a 	.word	0x9999999a
+    157c:	3ff99999 	.word	0x3ff99999
+    1580:	9999999a 	.word	0x9999999a
+    1584:	3ff19999 	.word	0x3ff19999
+    1588:	33333333 	.word	0x33333333
+    158c:	3ff33333 	.word	0x3ff33333
+    1590:	cccccccd 	.word	0xcccccccd
+    1594:	4000cccc 	.word	0x4000cccc
+    1598:	9999999a 	.word	0x9999999a
+    159c:	40019999 	.word	0x40019999
+    15a0:	66666666 	.word	0x66666666
+    15a4:	3ff66666 	.word	0x3ff66666
+    15a8:	cccccccd 	.word	0xcccccccd
+    15ac:	3ff4cccc 	.word	0x3ff4cccc
+    15b0:	00000000 	.word	0x00000000
+    15b4:	3ff80000 	.word	0x3ff80000
+    15b8:	9999999a 	.word	0x9999999a
+    15bc:	3ff99999 	.word	0x3ff99999
+    15c0:	9999999a 	.word	0x9999999a
+    15c4:	3ff19999 	.word	0x3ff19999
+    15c8:	33333333 	.word	0x33333333
+    15cc:	3ff33333 	.word	0x3ff33333
+    15d0:	cccccccd 	.word	0xcccccccd
+    15d4:	4000cccc 	.word	0x4000cccc
+    15d8:	9999999a 	.word	0x9999999a
+    15dc:	40019999 	.word	0x40019999
+    15e0:	66666666 	.word	0x66666666
+    15e4:	3ff66666 	.word	0x3ff66666
+    15e8:	cccccccd 	.word	0xcccccccd
+    15ec:	3ff4cccc 	.word	0x3ff4cccc
+    15f0:	00000000 	.word	0x00000000
+    15f4:	3ff80000 	.word	0x3ff80000
+    15f8:	9999999a 	.word	0x9999999a
+    15fc:	3ff99999 	.word	0x3ff99999
+    1600:	9999999a 	.word	0x9999999a
+    1604:	3ff19999 	.word	0x3ff19999
+    1608:	33333333 	.word	0x33333333
+    160c:	3ff33333 	.word	0x3ff33333
+    1610:	cccccccd 	.word	0xcccccccd
+    1614:	4000cccc 	.word	0x4000cccc
+    1618:	9999999a 	.word	0x9999999a
+    161c:	40019999 	.word	0x40019999
+    1620:	66666666 	.word	0x66666666
+    1624:	3ff66666 	.word	0x3ff66666
+    1628:	cccccccd 	.word	0xcccccccd
+    162c:	3ff4cccc 	.word	0x3ff4cccc
+    1630:	00000000 	.word	0x00000000
+    1634:	3ff80000 	.word	0x3ff80000
+    1638:	9999999a 	.word	0x9999999a
+    163c:	3ff99999 	.word	0x3ff99999
+    1640:	9999999a 	.word	0x9999999a
+    1644:	3ff19999 	.word	0x3ff19999
+    1648:	33333333 	.word	0x33333333
+    164c:	3ff33333 	.word	0x3ff33333
+    1650:	cccccccd 	.word	0xcccccccd
+    1654:	4000cccc 	.word	0x4000cccc
+    1658:	9999999a 	.word	0x9999999a
+    165c:	40019999 	.word	0x40019999
+    1660:	66666666 	.word	0x66666666
+    1664:	3ff66666 	.word	0x3ff66666
+    1668:	cccccccd 	.word	0xcccccccd
+    166c:	3ff4cccc 	.word	0x3ff4cccc
+    1670:	00000000 	.word	0x00000000
+    1674:	3ff80000 	.word	0x3ff80000
+    1678:	9999999a 	.word	0x9999999a
+    167c:	3ff99999 	.word	0x3ff99999
+    1680:	9999999a 	.word	0x9999999a
+    1684:	3ff19999 	.word	0x3ff19999
+    1688:	33333333 	.word	0x33333333
+    168c:	3ff33333 	.word	0x3ff33333
+    1690:	cccccccd 	.word	0xcccccccd
+    1694:	4000cccc 	.word	0x4000cccc
+    1698:	9999999a 	.word	0x9999999a
+    169c:	40019999 	.word	0x40019999
+    16a0:	66666666 	.word	0x66666666
+    16a4:	3ff66666 	.word	0x3ff66666
+    16a8:	cccccccd 	.word	0xcccccccd
+    16ac:	3ff4cccc 	.word	0x3ff4cccc
+    16b0:	00000000 	.word	0x00000000
+    16b4:	3ff80000 	.word	0x3ff80000
+    16b8:	9999999a 	.word	0x9999999a
+    16bc:	3ff99999 	.word	0x3ff99999
+    16c0:	9999999a 	.word	0x9999999a
+    16c4:	3ff19999 	.word	0x3ff19999
+    16c8:	33333333 	.word	0x33333333
+    16cc:	3ff33333 	.word	0x3ff33333
+    16d0:	cccccccd 	.word	0xcccccccd
+    16d4:	4000cccc 	.word	0x4000cccc
+    16d8:	9999999a 	.word	0x9999999a
+    16dc:	40019999 	.word	0x40019999
+    16e0:	66666666 	.word	0x66666666
+    16e4:	3ff66666 	.word	0x3ff66666
+    16e8:	cccccccd 	.word	0xcccccccd
+    16ec:	3ff4cccc 	.word	0x3ff4cccc
+    16f0:	00000000 	.word	0x00000000
+    16f4:	3ff80000 	.word	0x3ff80000
+    16f8:	9999999a 	.word	0x9999999a
+    16fc:	3ff99999 	.word	0x3ff99999
+    1700:	9999999a 	.word	0x9999999a
+    1704:	3ff19999 	.word	0x3ff19999
+    1708:	33333333 	.word	0x33333333
+    170c:	3ff33333 	.word	0x3ff33333
+    1710:	cccccccd 	.word	0xcccccccd
+    1714:	4000cccc 	.word	0x4000cccc
+    1718:	9999999a 	.word	0x9999999a
+    171c:	40019999 	.word	0x40019999
+    1720:	66666666 	.word	0x66666666
+    1724:	3ff66666 	.word	0x3ff66666
+    1728:	cccccccd 	.word	0xcccccccd
+    172c:	3ff4cccc 	.word	0x3ff4cccc
+    1730:	00000000 	.word	0x00000000
+    1734:	3ff80000 	.word	0x3ff80000
+    1738:	9999999a 	.word	0x9999999a
+    173c:	3ff99999 	.word	0x3ff99999
+    1740:	9999999a 	.word	0x9999999a
+    1744:	3ff19999 	.word	0x3ff19999
+    1748:	33333333 	.word	0x33333333
+    174c:	3ff33333 	.word	0x3ff33333
+    1750:	cccccccd 	.word	0xcccccccd
+    1754:	4000cccc 	.word	0x4000cccc
+    1758:	9999999a 	.word	0x9999999a
+    175c:	40019999 	.word	0x40019999
+    1760:	66666666 	.word	0x66666666
+    1764:	3ff66666 	.word	0x3ff66666
+    1768:	cccccccd 	.word	0xcccccccd
+    176c:	3ff4cccc 	.word	0x3ff4cccc
+    1770:	00000000 	.word	0x00000000
+    1774:	3ff80000 	.word	0x3ff80000
+    1778:	9999999a 	.word	0x9999999a
+    177c:	3ff99999 	.word	0x3ff99999
+    1780:	9999999a 	.word	0x9999999a
+    1784:	3ff19999 	.word	0x3ff19999
+    1788:	33333333 	.word	0x33333333
+    178c:	3ff33333 	.word	0x3ff33333
+    1790:	cccccccd 	.word	0xcccccccd
+    1794:	4000cccc 	.word	0x4000cccc
+    1798:	9999999a 	.word	0x9999999a
+    179c:	40019999 	.word	0x40019999
+    17a0:	66666666 	.word	0x66666666
+    17a4:	3ff66666 	.word	0x3ff66666
+    17a8:	cccccccd 	.word	0xcccccccd
+    17ac:	3ff4cccc 	.word	0x3ff4cccc
+    17b0:	00000000 	.word	0x00000000
+    17b4:	3ff80000 	.word	0x3ff80000
+    17b8:	9999999a 	.word	0x9999999a
+    17bc:	3ff99999 	.word	0x3ff99999
+    17c0:	9999999a 	.word	0x9999999a
+    17c4:	3ff19999 	.word	0x3ff19999
+    17c8:	33333333 	.word	0x33333333
+    17cc:	3ff33333 	.word	0x3ff33333
+    17d0:	cccccccd 	.word	0xcccccccd
+    17d4:	4000cccc 	.word	0x4000cccc
+    17d8:	9999999a 	.word	0x9999999a
+    17dc:	40019999 	.word	0x40019999
+    17e0:	66666666 	.word	0x66666666
+    17e4:	3ff66666 	.word	0x3ff66666
+    17e8:	cccccccd 	.word	0xcccccccd
+    17ec:	3ff4cccc 	.word	0x3ff4cccc
+    17f0:	00000000 	.word	0x00000000
+    17f4:	3ff80000 	.word	0x3ff80000
+    17f8:	9999999a 	.word	0x9999999a
+    17fc:	3ff99999 	.word	0x3ff99999
+
+00001800 <_start>:
+    1800:	eb000044 	bl	1918 <CONFIG_VIRTUAL_MEMORY>
+
+        //Step 1-3: configure PMN0 to count cycles
+        MOV R0, #0                 //write 0 into R0 then PMSELR
+    1804:	e3a00000 	mov	r0, #0
+        MCR p15, 0, R0, c9, c12, 5 //write 0 into PMSELR selects PMN0
+    1808:	ee090fbc 	mcr	15, 0, r0, cr9, cr12, {5}
+        MOV R1,#0x11               //Event 0x11 is CPU cycles
+    180c:	e3a01011 	mov	r1, #17
+        MCR p15, 0, R1, c9, c13, 1 //Write 0x11 into PMXEVTPER (PMN0 measure CPU cycles)
+    1810:	ee091f3d 	mcr	15, 0, r1, cr9, cr13, {1}
+
+        //Configure PMN1 to count cache misses
+        MOV R0, #1                 //write 1 into R0 then PMSELR
+    1814:	e3a00001 	mov	r0, #1
+        MCR p15, 0, R0, c9, c12, 5 //write 1 into PMSELR selects PMN1
+    1818:	ee090fbc 	mcr	15, 0, r0, cr9, cr12, {5}
+        MOV R1, #0x3               //Event 0x3 is Level 1 data cache misses
+    181c:	e3a01003 	mov	r1, #3
+        MCR p15, 0, R1, C9, C13, 1//Write 0x3 into PMXEVTPER(PMN1 measure Level 1 data cache misses )
+    1820:	ee091f3d 	mcr	15, 0, r1, cr9, cr13, {1}
+
+        //Configure PMN2 to count number of load insttruction excuted
+        MOV R0, #2                //write 2 into R0 then PMSELR
+    1824:	e3a00002 	mov	r0, #2
+        MCR p15, 0, R0, c9, c12, 5 //Write 2 in to PMSELR selects PMN2
+    1828:	ee090fbc 	mcr	15, 0, r0, cr9, cr12, {5}
+        MOV R1, #0x6              //Event 0x6 is number of insttructions excuted
+    182c:	e3a01006 	mov	r1, #6
+        MCR p15, 0, R1, c9, c13, 1//Write 0x6 into PMXEVTPER(PMN2 measure number of load insttruction excuted )
+    1830:	ee091f3d 	mcr	15, 0, r1, cr9, cr13, {1}
+
+
+
+        //Step 4: enable PMN0, PMN1, PMN2
+        MOV R0, #111                 //PMN0 is bit 0 of PMCNTENSET
+    1834:	e3a0006f 	mov	r0, #111	; 0x6f
+        MCR p15, 0, R0, c9, c12, 1 //Setting bit 0 of PMCNTENSET enables PMN0
+    1838:	ee090f3c 	mcr	15, 0, r0, cr9, cr12, {1}
+
+        //Step 5:clear all counters and start counters
+        MOV R0, #3                 //bits 0(start counters) and 1(reset counters)
+    183c:	e3a00003 	mov	r0, #3
+        MCR p15, 0, R0, c9, c12, 0 //Setting PMCR to 3
+    1840:	ee090f1c 	mcr	15, 0, r0, cr9, cr12, {0}
+
+00001844 <array_size>:
+    1844:	00000010 	.word	0x00000010
+
+               array_size:
+                              .word 16
+
+
+                         LDR R10, =my_array_A  // R10 has the address of the my_array_A
+    1848:	e59fa0b4 	ldr	r10, [pc, #180]	; 1904 <end+0x4>
+                         LDR R11, =my_array_B  // R11 has the address of the my_array_B
+    184c:	e59fb0b4 	ldr	r11, [pc, #180]	; 1908 <end+0x8>
+                         LDR R9, =result_array // R9 has the address of the result_array
+    1850:	e59f90b4 	ldr	r9, [pc, #180]	; 190c <end+0xc>
+                         LDR R12, =array_size  // R12 has the address of size of the array N
+    1854:	e59fc0b4 	ldr	r12, [pc, #180]	; 1910 <end+0x10>
+                         LDR R7, [R12] // r7 has the size of the array
+    1858:	e59c7000 	ldr	r7, [r12]
+
+                         MOV R0, #0    // i = 0 initially
+    185c:	e3a00000 	mov	r0, #0
+
+00001860 <L1>:
+                   L1:   MOV R1, #0    // j = 0 initially
+    1860:	e3a01000 	mov	r1, #0
+
+00001864 <L2>:
+                         //MOV R10, #0   //S
+                   L2:   MOV R2, #0    // K = 0 initially
+    1864:	e3a02000 	mov	r2, #0
+
+00001868 <SUM>:
+	...
+
+                   SUM: .double 0.0
+                         LDR R8, =SUM // R8 has the address of the
+    1870:	e59f809c 	ldr	r8, [pc, #156]	; 1914 <end+0x14>
+    1874:	ed984b00 	.word	0xed984b00
+
+00001878 <L3>:
+                         .word 0xED984B00//FLDD D4, [R8,#0] //D4 has the value of sum 0.0, for every loop in J, we clear the sum
+
+
+                   L3:   MUL R6, R2, R7
+    1878:	e0060792 	mul	r6, r2, r7
+                         ADD R4, R1, R6  // R4(temp address) = k*N +j
+    187c:	e0814006 	add	r4, r1, r6
+                         ADD R4, R11, R4, LSL #3  // temp address * 8
+    1880:	e08b4184 	add	r4, r11, r4, lsl #3
+    1884:	ed945b00 	.word	0xed945b00
+                         .word 0xED945B00//FLDD D5,[R4,#0] // store the value in array B to D5
+
+                         MUL R6, R0, R7
+    1888:	e0060790 	mul	r6, r0, r7
+                         ADD R5, R2, R6  // R5(temp address) = i*N+k
+    188c:	e0825006 	add	r5, r2, r6
+                         ADD R5, R10, R5, LSL #3 // temp address *8
+    1890:	e08a5185 	add	r5, r10, r5, lsl #3
+    1894:	ed956b00 	.word	0xed956b00
+    1898:	ee257b06 	.word	0xee257b06
+    189c:	ee344b07 	.word	0xee344b07
+                         .word 0xED956B00//FLDD D6,[R5,#0] // store the value in array A to D6
+
+                         .word 0xEE257B06//FMULD D7, D5, D6 //multiply the two value from A and B arrays
+                         .word 0xEE344B07//FADDD D4, D4, D7 // sum = sum + result of the multiply
+                         ADD R2,R2,#1  //k = k+1
+    18a0:	e2822001 	add	r2, r2, #1
+                         CMP R2, R7
+    18a4:	e1520007 	cmp	r2, r7
+                         BLT L3        //if(k<N) go to L3
+    18a8:	bafffff2 	blt	1878 <L3>
+
+                         MUL R6, R0, R7
+    18ac:	e0060790 	mul	r6, r0, r7
+                         ADD R3, R1, R6// address = i*size(row) +j
+    18b0:	e0813006 	add	r3, r1, r6
+                         //alternatively  MUL R3, R0, R7 - i*n
+                         //ADD R3, R3, R1 -  +j
+                         ADD R3, R9, R3, LSL #3
+    18b4:	e0893183 	add	r3, r9, r3, lsl #3
+    18b8:	ed834b00 	.word	0xed834b00
+                         .word 0xED834B00//FSTD  D4, [R3, #0]  //store the value to the result_array
+
+                         ADD R1, R1, #1 // j = j + 1
+    18bc:	e2811001 	add	r1, r1, #1
+                         CMP R1, R7  //(if j<N) go to L2
+    18c0:	e1510007 	cmp	r1, r7
+                         BLT L2
+    18c4:	baffffe6 	blt	1864 <L2>
+                         ADD R0, R0, #1 // i = i + 1
+    18c8:	e2800001 	add	r0, r0, #1
+                         CMP R0, R7 // if(i<N) go TO L1
+    18cc:	e1500007 	cmp	r0, r7
+                         BLT L1
+    18d0:	baffffe2 	blt	1860 <L1>
+        // Step 7: stop counters
+        MOV R0, #0
+    18d4:	e3a00000 	mov	r0, #0
+        MCR p15, 0, R0, c9, c12, 0 //write 0 t PMCR to stop counters
+    18d8:	ee090f1c 	mcr	15, 0, r0, cr9, cr12, {0}
+
+
+        //Step 8 - 10 Select PMN0 and read out result into R3
+        MOV R0, #0                 //PMN0
+    18dc:	e3a00000 	mov	r0, #0
+        MCR p15, 0, R0, c9, c12, 5 //Write 0 to PMSELR
+    18e0:	ee090fbc 	mcr	15, 0, r0, cr9, cr12, {5}
+        MRC p15, 0, R3, c9, c13, 2 //Read PMXEVCNTR into R3
+    18e4:	ee193f5d 	mrc	15, 0, r3, cr9, cr13, {2}
+
+        MOV R0, #1                //PMN1
+    18e8:	e3a00001 	mov	r0, #1
+        MCR p15, 0, R0, c9, c12, 5 //Write 1 to PMSELR
+    18ec:	ee090fbc 	mcr	15, 0, r0, cr9, cr12, {5}
+        MRC P15, 0, R7, c9, c13, 2 //Read PMXEVCNTR into R7
+    18f0:	ee197f5d 	mrc	15, 0, r7, cr9, cr13, {2}
+
+        MOV R0, #2               //PMN2
+    18f4:	e3a00002 	mov	r0, #2
+        MCR p15, 0, R0, c9, c12, 5 //Write 2 to PMSELR
+    18f8:	ee090fbc 	mcr	15, 0, r0, cr9, cr12, {5}
+        MRC p15, 0, R8, c9, c13, 2 //Read PMXEVCNTR into R8
+    18fc:	ee198f5d 	mrc	15, 0, r8, cr9, cr13, {2}
+
+00001900 <end>:
+
+
+
+end:   B end                       //wait here
+    1900:	eafffffe 	b	1900 <end>
+    1904:	00000000 	.word	0x00000000
+    1908:	00000800 	.word	0x00000800
+    190c:	00001000 	.word	0x00001000
+    1910:	00001844 	.word	0x00001844
+    1914:	00001868 	.word	0x00001868
+
+00001918 <CONFIG_VIRTUAL_MEMORY>:
+      .equ  TRANS_TABLE_N, 0
+      .equ  SECTION_SIZE, 0x100000
+
+      .global CONFIG_VIRTUAL_MEMORY
+CONFIG_VIRTUAL_MEMORY:
+      PUSH {R4-R9}
+    1918:	e92d03f0 	push	{r4, r5, r6, r7, r8, r9}
+
+      /* Verify System Control Register contents */
+      MRC p15, 0, R0, c1, c0, 0 /* Read SCTLR into Rt */
+    191c:	ee110f10 	mrc	15, 0, r0, cr1, cr0, {0}
+      LDR R1, =0x00C5187A
+    1920:	e59f10a8 	ldr	r1, [pc, #168]	; 19d0 <CPT_RETURN+0x8>
+      CMP R0, R1
+    1924:	e1500001 	cmp	r0, r1
+      BNE CPT_ERROR
+    1928:	1a000025 	bne	19c4 <CPT_ERROR>
+
+      LDR R6, =0x100000 /* address to try to read after MMU configured */
+    192c:	e3a06601 	mov	r6, #1048576	; 0x100000
+      LDR R7, [R6]      /* R7 is contents of word at physical address 0x100000 */
+    1930:	e5967000 	ldr	r7, [r6]
+      LDR R8, =0x200000 /* address to try to read after MMU configured */
+    1934:	e3a08602 	mov	r8, #2097152	; 0x200000
+      LDR R9, [R8]      /* R9 has contents of word at physical address 0x200000 */
+    1938:	e5989000 	ldr	r9, [r8]
+
+      /* initialize level 1 translation table */
+               /*1111111111          */
+               /*98765432109876543210*/
+      LDR R1, =0b10000001110000001110    /* lower 20 bits of section descriptor for cacheable sections */
+    193c:	e59f1090 	ldr	r1, [pc, #144]	; 19d4 <CPT_RETURN+0xc>
+      LDR R2, =0b10000000110000000010    /* lower 20 bits of section descriptor for device sections */
+    1940:	e59f2090 	ldr	r2, [pc, #144]	; 19d8 <CPT_RETURN+0x10>
+      LDR R3, =SECTION_SIZE
+    1944:	e3a03601 	mov	r3, #1048576	; 0x100000
+      LDR R4, =TRANS_TABLE_0_BASE
+    1948:	e3a04201 	mov	r4, #268435456	; 0x10000000
+      MOV R0, #0  /* loop counter */
+    194c:	e3a00000 	mov	r0, #0
+
+00001950 <CPT_L1>:
+CPT_L1: 
+      MUL   R5, R0, R3                     /* physical address of section */
+    1950:	e0050390 	mul	r5, r0, r3
+      CMP   R0, #UNCACHABLE_START 
+    1954:	e3500b01 	cmp	r0, #1024	; 0x400
+      ORRLT R5, R5, R1
+    1958:	b1855001 	orrlt	r5, r5, r1
+      ORRGE R5, R5, R2
+    195c:	a1855002 	orrge	r5, r5, r2
+      STR   R5, [R4, R0, LSL #2]
+    1960:	e7845100 	str	r5, [r4, r0, lsl #2]
+      ADD   R0, R0, #1
+    1964:	e2800001 	add	r0, r0, #1
+      CMP   R0, #0x1000
+    1968:	e3500a01 	cmp	r0, #4096	; 0x1000
+      BLT   CPT_L1
+    196c:	bafffff7 	blt	1950 <CPT_L1>
+
+      /* for testing address translation: remap second two pages */
+      ADD R5, R1, R3
+    1970:	e0815003 	add	r5, r1, r3
+      STR R5, [R4, #8]  /* virtual page 2 => physical page 1 */
+    1974:	e5845008 	str	r5, [r4, #8]
+      ADD R5, R1, R3, LSL #1
+    1978:	e0815083 	add	r5, r1, r3, lsl #1
+      STR R5, [R4, #4]  /* virtual page 1 => physical page 2 */
+    197c:	e5845004 	str	r5, [r4, #4]
+
+      /* set Translation Table Base Control Register */
+      MOV R0, #TRANS_TABLE_N
+    1980:	e3a00000 	mov	r0, #0
+      MCR p15, 0, R0, c2, c0, 2 /* TTBCR.N = 0 */
+    1984:	ee020f50 	mcr	15, 0, r0, cr2, cr0, {2}
+
+      /* set Translation Table Base Register 0 */
+      LDR R0,=TRANS_TABLE_0_BASE 
+    1988:	e3a00201 	mov	r0, #268435456	; 0x10000000
+      MCR p15, 0, R0, c2, c0, 0 /* TTBR0 = TRANS_TABLE_0_BASE */
+    198c:	ee020f10 	mcr	15, 0, r0, cr2, cr0, {0}
+
+      /* set Domain Access Control Register */
+      MOV R0, #1
+    1990:	e3a00001 	mov	r0, #1
+      MCR p15, 0, R0, c3, c0, 0 /* Domain 0 is client */
+    1994:	ee030f10 	mcr	15, 0, r0, cr3, cr0, {0}
+
+      /* set Context ID Register */
+      MOV R0, #0
+    1998:	e3a00000 	mov	r0, #0
+      MCR p15, 0, R0, c13, c0, 1 /* PROCID = 0, ACID = 0 */
+    199c:	ee0d0f30 	mcr	15, 0, r0, cr13, cr0, {1}
+
+      /* enable data cache and MMU */
+      MRC p15, 0, R0, c1, c0, 0 /* Read SCTLR into Rt */
+    19a0:	ee110f10 	mrc	15, 0, r0, cr1, cr0, {0}
+      ORR R0, R0, #0b101
+    19a4:	e3800005 	orr	r0, r0, #5
+      MCR p15, 0, R0, c1, c0, 0 /* Write Rt to SCTLR */ 
+    19a8:	ee010f10 	mcr	15, 0, r0, cr1, cr0, {0}
+
+      ISB
+    19ac:	f57ff06f 	isb	sy
+
+      LDR   R1, [R6] /* R1 has contents of memory at virtual address 0x100000 
+    19b0:	e5961000 	ldr	r1, [r6]
+                        which should be physical address 0x200000 */
+
+      CMP   R1, R9   /* R1 should match R9 if address translation worked */
+    19b4:	e1510009 	cmp	r1, r9
+      BNE   CPT_ERROR 
+    19b8:	1a000001 	bne	19c4 <CPT_ERROR>
+
+      MOV   R0, #0
+    19bc:	e3a00000 	mov	r0, #0
+      B     CPT_RETURN
+    19c0:	ea000000 	b	19c8 <CPT_RETURN>
+
+000019c4 <CPT_ERROR>:
+CPT_ERROR:
+      MOV   R0, #1
+    19c4:	e3a00001 	mov	r0, #1
+
+000019c8 <CPT_RETURN>:
+CPT_RETURN:
+      POP   {R4-R9}
+    19c8:	e8bd03f0 	pop	{r4, r5, r6, r7, r8, r9}
+      BX    LR
+    19cc:	e12fff1e 	bx	lr
+    19d0:	00c5187a 	.word	0x00c5187a
+    19d4:	00081c0e 	.word	0x00081c0e
+    19d8:	00080c02 	.word	0x00080c02
