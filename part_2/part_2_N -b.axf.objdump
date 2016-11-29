@@ -1,0 +1,154 @@
+
+C:/Users/Larry/Documents/GitHub/Lab11_caches/part_2/part_2_N -b.axf:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+00000000 <__cs3_interrupt_vector>:
+
+array_size:
+           .word 3
+_start:
+
+      LDR R10, =my_array_A  // R10 has the address of the my_array_A
+   0:	9999999a 	.word	0x9999999a
+   4:	3ff19999 	.word	0x3ff19999
+   8:	33333333 	.word	0x33333333
+   c:	3ff33333 	.word	0x3ff33333
+  10:	cccccccd 	.word	0xcccccccd
+  14:	4000cccc 	.word	0x4000cccc
+  18:	9999999a 	.word	0x9999999a
+  1c:	40019999 	.word	0x40019999
+  20:	66666666 	.word	0x66666666
+  24:	3ff66666 	.word	0x3ff66666
+  28:	cccccccd 	.word	0xcccccccd
+  2c:	3ff4cccc 	.word	0x3ff4cccc
+  30:	00000000 	.word	0x00000000
+  34:	3ff80000 	.word	0x3ff80000
+  38:	9999999a 	.word	0x9999999a
+  3c:	3ff99999 	.word	0x3ff99999
+  40:	33333333 	.word	0x33333333
+  44:	3ffb3333 	.word	0x3ffb3333
+
+00000048 <my_array_B>:
+  48:	7ae147ae 	.word	0x7ae147ae
+  4c:	3ff7ae14 	.word	0x3ff7ae14
+  50:	51eb851f 	.word	0x51eb851f
+  54:	3ff91eb8 	.word	0x3ff91eb8
+  58:	a3d70a3d 	.word	0xa3d70a3d
+  5c:	40063d70 	.word	0x40063d70
+  60:	1eb851ec 	.word	0x1eb851ec
+  64:	4005eb85 	.word	0x4005eb85
+  68:	1eb851ec 	.word	0x1eb851ec
+  6c:	4003eb85 	.word	0x4003eb85
+  70:	5c28f5c3 	.word	0x5c28f5c3
+  74:	3ff5c28f 	.word	0x3ff5c28f
+  78:	a3d70a3d 	.word	0xa3d70a3d
+  7c:	40063d70 	.word	0x40063d70
+  80:	9999999a 	.word	0x9999999a
+  84:	40039999 	.word	0x40039999
+  88:	cccccccd 	.word	0xcccccccd
+  8c:	3feccccc 	.word	0x3feccccc
+
+00000090 <array_size>:
+  90:	00000003 	.word	0x00000003
+
+00000094 <_start>:
+  94:	e59fa0d0 	ldr	r10, [pc, #208]	; 16c <result_array+0x48>
+      LDR R11, =my_array_B  // R11 has the address of the my_array_B
+  98:	e59fb0d0 	ldr	r11, [pc, #208]	; 170 <result_array+0x4c>
+      LDR R9, =result_array // R9 has the address of the result_array
+  9c:	e59f90d0 	ldr	r9, [pc, #208]	; 174 <result_array+0x50>
+      LDR R12, =array_size  // R12 has the address of size of the array N
+  a0:	e59fc0d0 	ldr	r12, [pc, #208]	; 178 <result_array+0x54>
+      LDR R7, [R12] // r7 has the size of the array
+  a4:	e59c7000 	ldr	r7, [r12]
+
+      MOV R0, #0    // i = 0 initially
+  a8:	e3a00000 	mov	r0, #0
+
+000000ac <L1>:
+L1:   MOV R1, #0    // j = 0 initially
+  ac:	e3a01000 	mov	r1, #0
+
+000000b0 <L2>:
+      //MOV R10, #0   //S
+L2:   MOV R2, #0    // K = 0 initially
+  b0:	e3a02000 	mov	r2, #0
+
+000000b4 <SUM>:
+	...
+
+SUM: .double 0.0
+      LDR R8, =SUM // R8 has the address of the
+  bc:	e59f80b8 	ldr	r8, [pc, #184]	; 17c <result_array+0x58>
+  c0:	ed984b00 	.word	0xed984b00
+
+000000c4 <L3>:
+      .word 0xED984B00//FLDD D4, [R8,#0] //D4 has the value of sum 0.0, for every loop in J, we clear the sum
+
+
+L3:   MUL R6, R2, R7
+  c4:	e0060792 	mul	r6, r2, r7
+      ADD R4, R1, R6  // R4(temp address) = k*N +j
+  c8:	e0814006 	add	r4, r1, r6
+      ADD R4, R11, R4, LSL #3  // temp address * 8
+  cc:	e08b4184 	add	r4, r11, r4, lsl #3
+  d0:	ed945b00 	.word	0xed945b00
+      .word 0xED945B00//FLDD D5,[R4,#0] // store the value in array B to D5
+
+      MUL R6, R0, R7
+  d4:	e0060790 	mul	r6, r0, r7
+      ADD R5, R2, R6  // R5(temp address) = i*N+k
+  d8:	e0825006 	add	r5, r2, r6
+      ADD R5, R10, R5, LSL #3 // temp address *8
+  dc:	e08a5185 	add	r5, r10, r5, lsl #3
+  e0:	ed956b00 	.word	0xed956b00
+  e4:	ee257b06 	.word	0xee257b06
+  e8:	ee344b07 	.word	0xee344b07
+      .word 0xED956B00//FLDD D6,[R5,#0] // store the value in array A to D6
+
+      .word 0xEE257B06//FMULD D7, D5, D6 //multiply the two value from A and B arrays
+      .word 0xEE344B07//FADDD D4, D4, D7 // sum = sum + result of the multiply
+      ADD R2,R2,#1  //k = k+1
+  ec:	e2822001 	add	r2, r2, #1
+      CMP R2, R7
+  f0:	e1520007 	cmp	r2, r7
+      BLT L3        //if(k<N) go to L3
+  f4:	bafffff2 	blt	c4 <L3>
+
+      MUL R6, R0, R7
+  f8:	e0060790 	mul	r6, r0, r7
+      ADD R3, R1, R6// address = i*size(row) +j
+  fc:	e0813006 	add	r3, r1, r6
+      //alternatively  MUL R3, R0, R7 - i*n
+      //ADD R3, R3, R1 -  +j
+      ADD R3, R9, R3, LSL #3
+ 100:	e0893183 	add	r3, r9, r3, lsl #3
+ 104:	ed834b00 	.word	0xed834b00
+      .word 0xED834B00//FSTD  D4, [R3, #0]  //store the value to the result_array
+
+      ADD R1, R1, #1 // j = j + 1
+ 108:	e2811001 	add	r1, r1, #1
+      CMP R1, R7  //(if j<N) go to L2
+ 10c:	e1510007 	cmp	r1, r7
+      BLT L2
+ 110:	baffffe6 	blt	b0 <L2>
+      ADD R0, R0, #1 // i = i + 1
+ 114:	e2800001 	add	r0, r0, #1
+      CMP R0, R7 // if(i<N) go TO L1
+ 118:	e1500007 	cmp	r0, r7
+      BLT L1
+ 11c:	baffffe2 	blt	ac <L1>
+
+00000120 <end>:
+
+      end:  B end         //wait here
+ 120:	eafffffe 	b	120 <end>
+
+00000124 <result_array>:
+	...
+ 170:	00000048 	.word	0x00000048
+ 174:	00000124 	.word	0x00000124
+ 178:	00000090 	.word	0x00000090
+ 17c:	000000b4 	.word	0x000000b4

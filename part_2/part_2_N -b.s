@@ -6,14 +6,26 @@ my_array_A:
            .double 1.2
            .double 2.1
            .double 2.2
+           .double 1.4
+           .double 1.3
+           .double 1.5
+           .double 1.6
+           .double 1.7
 
 my_array_B:
            .double 1.48
            .double 1.57
            .double 2.78
-           .double 3.74
+           .double 2.74
+           .double 2.49
+           .double 1.36
+           .double 2.78
+           .double 2.45
+           .double 0.9
+
+
 array_size:
-           .word 2
+           .word 3
 _start:
 
       LDR R10, =my_array_A  // R10 has the address of the my_array_A
@@ -76,6 +88,11 @@ L3:   MUL R6, R2, R7
 
 
 result_array:
+              .double 0.0
+              .double 0.0
+              .double 0.0
+              .double 0.0
+              .double 0.0
               .double 0.0
               .double 0.0
               .double 0.0
